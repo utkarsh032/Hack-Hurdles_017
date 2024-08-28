@@ -46,6 +46,12 @@
   display: inline-block;
 }
 
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .dropbtn {
   background-color: transparent;
   color: #fff;
@@ -143,6 +149,14 @@
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
+}
+
+#btn4 {
+  background-color: #374151;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 12%;
 }
 
 .badge {

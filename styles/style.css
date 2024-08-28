@@ -15,7 +15,6 @@ body {
 }
 
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,11 +22,16 @@ nav {
   background-color: #122031;
   /* background-color: #34495E; */
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 20px;
   width: 80%;
   position: fixed;
   right: 0;
   z-index: 1000;
+}
+
+.mobile_logo,
+#btn4 {
+  display: none;
 }
 
 .right_nav {
@@ -36,7 +40,7 @@ nav {
   gap: 10px;
 }
 
-.dropdown>img {
+.dropdown>.profile>img {
   width: 20%;
 }
 

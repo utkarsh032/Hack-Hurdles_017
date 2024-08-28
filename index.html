@@ -15,7 +15,11 @@
 <body">
   <!-- Navbar Start -->
   <nav class="left_nav">
-    <div>
+    <div class="logo mobile_logo">
+      <!-- <img src="./img/dark_logo.svg" alt="logo"> -->
+      <img src="./img/light_logo.svg" alt="logo">
+    </div>
+    <div id="dashboard">
       <p id="heading1">Dashboard</p>
       <p>Admin Dashboard Solution</p>
     </div>
@@ -40,9 +44,11 @@
         <span class="badge"></span>
       </div>
       <!-- Profile -->
-      <div class="dropdown">
-        <img src="./img/user-01.webp" alt="User Image" class="user-img">
-        <button class="dropbtn">Joel Dnim <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="dropdown" id="dropdown">
+        <div class="profile">
+          <img src="./img/user-01.webp" alt="User Image" class="user-img">
+          <button class="dropbtn">Joel Dnim <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="dropdown-content">
           <a href="#">Profile</a>
           <hr>
@@ -50,6 +56,9 @@
           <hr>
           <a href="#">Logout</a>
         </div>
+      </div>
+      <div id="btn4">
+        <i class="fa-solid fa-bars"></i>
       </div>
 
     </div>
@@ -59,8 +68,8 @@
   <!-- Sidebare & Main Screen -->
   <div class="sidebar">
     <div class="logo">
-      <!-- <img src="./img/dark_logo.svg" alt="logo"> -->
       <img src="./img/light_logo.svg" alt="logo">
+      <!-- <img src="./img/utk.png" alt="logo"> -->
     </div>
     <ul>
       <li><a href="#home">Home</a></li>
