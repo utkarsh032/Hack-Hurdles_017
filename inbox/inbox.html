@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox</title>
+    <link rel="stylesheet" href="inbox.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button class="compose_message"> <i class="fa-solid fa-circle-plus" style="color: white;"></i><span>Compose</span></button>
+            <ul>
+                <li><a href="#"> <i class="fa-solid fa-inbox"></i><span>Inbox</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i>Starred</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock"></i>Snoozed</a></li>   <!-- snooze icon is paid version i font awesome -->
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i>Sent</a></li>
+                <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>Drafts</a></li>
+                <li><a href="#"><i class="fa-solid fa-shield-virus"></i>Spam</a></li>
+                <li><a href="#"><i class="fa-solid fa-trash"></i>Trash</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content" id="main-content">
+            <header>
+                <button class="toggle-btn" id="toggle-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+                <div class="main_header_container">
+                    <div class="main_header_left">
+                        <input type="checkbox" title="Select all"/>
+                        <i class="fa-solid fa-trash-can" title="Delete"></i>
+                        <i class="fa-solid fa-arrows-rotate" title="Refresh"></i>
+                    </div>
+                    <div class="main_header_right">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for user, email address...">
+                    </div>
+                </div>
+            </header>
+            <div class="email-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class=""></th>
+                            <th>Sender</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite" class="fa-solid fa-star"></i></td>
+                            <td>Musharof Chowdhury</td>
+                            <td class="text_desc">Some note & Lorem Ipsum available alteration in some form.</td>
+                            <td class="date_large_screen">17 Oct, 2024</td>
+                            <td class="date_small_screen">17/10/24</td>
+                        </tr>
+                        <tr>
+                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite2" class="fa-solid fa-star"></i></td>
+                            <td>Naimur Rahman</td>
+                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                            <td class="date_large_screen">25 Nov, 2024</td>
+                            <td class="date_small_screen">25/11/24</td>
+
+                        </tr>
+                        <tr>
+                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite3" class="fa-solid fa-star"></i></td>
+
+                            <td>Juhan Ahamed</td>
+                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                            <td class="date_large_screen">25 Nov, 2024</td>
+                            <td class="date_small_screen">25/11/24</td>
+
+                        </tr>
+                        <tr>
+                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite4" class="fa-solid fa-star"></i></td>
+
+                            <td> Mahbub Hasan</td>
+                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                            <td class="date_large_screen">19 Dec, 2024</td>
+                            <td class="date_small_screen">19/12/24</td>
+
+                        </tr>
+                        <tr>
+                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/><i id="favourite5" class="fa-solid fa-star"></i></td>
+                            <td>Shafiq Hammad</td>
+                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                            <td class="date_large_screen">20 Dec, 2024</td>
+                            <td class="date_small_screen">20/12/24</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="inbox_script.js"></script>
+    <script src="https://kit.fontawesome.com/38e95fb4e5.js" crossorigin="anonymous"></script>
+</body>
+</html>
