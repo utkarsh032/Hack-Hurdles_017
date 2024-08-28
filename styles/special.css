@@ -1,0 +1,157 @@
+/* dark/light_btn */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+/* DropDown Profile */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #374151;
+  border-radius: 6px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* Style each dropdown item */
+.dropdown-content a {
+  padding: 18px 16px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #ddd;
+}
+
+.user-img {}
+
+/* Heading */
+#heading1 {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+#heading2 {
+  font-size: 16px;
+  color: #9CA3AF;
+}
+
+#search {
+  background-color: #374151;
+  border-radius: 24px;
+  padding: 12px;
+  color: #ffff;
+  border: 1px solid rgb(75 85 99);
+  color: #9CA3AF;
+}
+
+#search>i {
+  font-size: 16px;
+  background-color: transparent;
+  padding: 0 4px;
+}
+
+#search>input {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffff;
+}
+
+
+
+#btn2 {
+  background-color: #374151;
+  padding: 12px;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+
+
+#btn3 {
+  background-color: #374151;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid white;
+}

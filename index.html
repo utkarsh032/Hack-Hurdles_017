@@ -4,16 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/animation.css">
+  <link rel="stylesheet" href="./styles/responsiveness.css">
+  <link rel="stylesheet" href="./styles/special.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>FinanceFlow || A support in Finance...</title>
+
 </head>
 
-<body style="background-color: #122031; width: 100vh;">
+<body">
   <!-- Navbar Start -->
+  <nav class="left_nav">
+    <div>
+      <p id="heading1">Dashboard</p>
+      <p>Admin Dashboard Solution</p>
+    </div>
+    <div class="right_nav">
+      <!-- search -->
+      <div id="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="search">
+      </div>
+      <!-- dark/light_mode -->
+      <div id="dark/light_mode">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+      <!-- otifcation -->
+      <div id="btn3" class="notification">
+        <i class="fa-regular fa-bell"></i>
+        <span class="badge"></span>
+      </div>
+      <!-- Profile -->
+      <div class="dropdown">
+        <img src="./img/user-01.webp" alt="User Image" class="user-img">
+        <button class="dropbtn">Joel Dnim <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <hr>
+          <a href="#">Profile Setting</a>
+          <hr>
+          <a href="#">Logout</a>
+        </div>
+      </div>
 
+    </div>
+  </nav>
   <!-- Navbar End -->
+
+  <!-- Sidebare & Main Screen -->
+  <div class="sidebar">
+    <div class="logo">
+      <!-- <img src="./img/dark_logo.svg" alt="logo"> -->
+      <img src="./img/light_logo.svg" alt="logo">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <!-- Main Screen -->
+  <div class="content">
+    <h2>Welcome to My Website</h2>
+    <p>This is a basic layout with a top navbar and a left sidebar.</p>
+  </div>
 
 
   <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
-</body>
+  <script src="script.js"></script>
+
+  </body>
 
 </html>
