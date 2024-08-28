@@ -70,14 +70,148 @@
     <div class="logo">
       <img src="./img/light_logo.svg" alt="logo">
       <!-- <img src="./img/utk.png" alt="logo"> -->
+      <!-- Sidebar start-->
+  <div class="sidebar">  
+    <!-- Menu -->
+        <div class="flex-1 px-4 py-8 sidebar-content">
+            <h3 class="text-sm text-gray-500 mt-8">MENU</h3>
+            <ul class="space-y-4">
+                <li class="dropdown">
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded" onclick="toggleDropdown('dashboardDropdown')">
+                        <span class="material-icons">dashboard</span>
+                        <span>Dashboard</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <div id="dashboardDropdown" class="dropdown-content">
+                        <a href="#">eCommerce</a>
+                        <a href="#">Analytics <span class="side-pro side-box">PRO</span></a>
+                        <a href="#">Marketing <span class="side-pro side-box">PRO</span></a>
+                        <a href="#">CRM <span class="side-pro side-box">PRO</span></a>
+                        <a href="#">Stocks <span class="side-pro side-box">PRO</span></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">calendar_today</span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">person</span>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded"  onclick="toggleDropdown('TaskDropdown')">
+                        <span class="material-icons">task</span>
+                        <span>Task</span>
+                        <span class="material-icons">expand_more</span>
+                    </a>
+                    <div id="TaskDropdown" class="dropdown-content">
+                        <a href="#">List <span class="side-pro side-box">PRO</span></a>
+                        <a href="#">Kanbon <span class="side-pro side-box">PRO</span></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">assignment</span>
+                        <span>Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">table_chart</span>
+                        <span>Tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">pages</span>
+                        <span>Pages</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Support Section -->
+            <h3 class="text-sm text-gray-500 mt-8">SUPPORT</h3>
+            <ul class="mt-4 space-y-4">
+                <li>
+                    <a href="#" class="flex items-center justify-between space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <div class="flex items-center space-x-2">
+                            <span class="material-icons">email</span>
+                            <span>Messages</span>
+                        </div>
+                        <span class="side-box">5</span>
+                        <span class="side-pro side-box">PRO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center justify-between space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <div class="flex items-center space-x-2">
+                            <span class="material-icons">inbox</span>
+                            <span>Inbox</span>
+                        </div>
+                        <span class="side-pro side-box">PRO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center justify-between space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <div class="flex items-center space-x-2">
+                            <span class="material-icons">receipt</span>
+                            <span>Invoice</span>
+                        </div>
+                        <span class="side-pro side-box">PRO</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Others Section -->
+            <h3 class="text-sm text-gray-500 mt-8">OTHERS</h3>
+            <ul class="mt-4 space-y-4">
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">bar_chart</span>
+                        <span>Chart</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">build</span>
+                        <span>UI Elements</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 hover:bg-gray-700 p-2 rounded">
+                        <span class="material-icons">lock</span>
+                        <span>Authentication</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
+
+    <!-- Main Content -->
+    <div class="main-content text-white">
+        <!-- Your main content here -->
+    </div>
+
+
+<!-- Material Icons CDN -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- JavaScript for dropdown -->
+<script>
+    function toggleDropdown(dropdownId) {
+        var dropdown = document.getElementById(dropdownId);
+        if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+        } else {
+            dropdown.classList.add('show');
+        }
+    }
+</script>
+</div>
   <!-- Main Screen -->
   <div class="content">
     <h2>Welcome to My Website</h2>
