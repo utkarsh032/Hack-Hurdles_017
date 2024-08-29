@@ -1,3 +1,4 @@
+/*special .css*/
 /* dark/light_btn */
 .checkbox {
   opacity: 0;
@@ -94,7 +95,7 @@
   color: #ddd;
 }
 
-.user-img {}
+
 
 /* Heading */
 #heading1 {
@@ -168,6 +169,8 @@
   background-color: red;
   border-radius: 50%;
   border: 1px solid white;
+  margin-right: 19px;
+  margin-top: 15px;
 }
 
 .card {
@@ -181,10 +184,10 @@
 
 .icon {
   color: #fff;
-  background-color: #374151;
-  padding: 10px;
+  padding: 8px;
   border-radius: 50%;
   transition: background-color 0.3s ease;
+  font-size: 19px;
 }
 
 i:hover {
