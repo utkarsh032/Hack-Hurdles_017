@@ -96,6 +96,43 @@ li {
   gap: 6px;
 }
 
+.side-box {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: #3c50e0;
+  padding: 4px 10px;
+  border-radius: .25rem;
+  margin-left: 10px; /* Increase distance between "Messages" and "5" */
+}
+
+.side-pro {
+  padding: 4px 10px;
+  margin-left: 0px; /* Reduce distance between "5" and "PRO" */
+}
+li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.right-group {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.right-group .side-box {
+  margin-right: 10px; /* Adds space between "5" and "PRO" */
+}
+
+.right-group .side-pro {
+  margin-left: 0; /* Keeps "PRO" in line, unaffected by "5" */
+}
+
+
+
 #sidebar .brand .brand_logo {
   font-weight: 900;
   font-size: 2rem;
@@ -137,7 +174,10 @@ li {
   align-items: center;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 12px 16px 12px 0;
+  padding-left: 8px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-top: 10px;
   transition: all .3s ease;
   border-radius: 10px;
   margin: 4px 0;
@@ -315,8 +355,8 @@ nav .nav-link .badge {
   position: absolute;
   top: -12px;
   right: -12px;
-  width: 20px;
-  height: 20px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   border: 2px solid var(--light);
   background: var(--red);
