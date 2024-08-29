@@ -13,79 +13,298 @@
 </head>
 
 <body">
-  <!-- Navbar Start -->
-  <nav class="left_nav">
-    <div class="logo mobile_logo">
-      <!-- <img src="./img/dark_logo.svg" alt="logo"> -->
-      <img src="./img/light_logo.svg" alt="logo">
-    </div>
-    <div id="dashboard">
-      <p id="heading1">Dashboard</p>
-      <p>Admin Dashboard Solution</p>
-    </div>
-    <div class="right_nav">
-      <!-- search -->
-      <div id="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" placeholder="search">
-      </div>
-      <!-- dark/light_mode -->
-      <div id="dark/light_mode">
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <label for="checkbox" class="checkbox-label">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <span class="ball"></span>
-        </label>
-      </div>
-      <!-- otifcation -->
-      <div id="btn3" class="notification">
-        <i class="fa-regular fa-bell"></i>
-        <span class="badge"></span>
-      </div>
-      <!-- Profile -->
-      <div class="dropdown" id="dropdown">
-        <div class="profile">
-          <img src="./img/user-01.webp" alt="User Image" class="user-img">
-          <button class="dropbtn">Joel Dnim <i class="fa-solid fa-chevron-down"></i></button>
-        </div>
-        <div class="dropdown-content">
-          <a href="#">Profile</a>
-          <hr>
-          <a href="#">Profile Setting</a>
-          <hr>
-          <a href="#">Logout</a>
-        </div>
-      </div>
-      <div id="btn4">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+        FinanceFlow</span></a>
 
-    </div>
-  </nav>
-  <!-- Navbar End -->
+    <!-- SideMenu -->
+    <ul class="side-menu">
+      <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+      <li class="divider" data-text="main">Main</li>
 
-  <!-- Sidebare & Main Screen -->
-  <div class="sidebar">
-    <div class="logo">
-      <img src="./img/light_logo.svg" alt="logo">
-      <!-- <img src="./img/utk.png" alt="logo"> -->
-    </div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Alert</a></li>
+          <li><a href="#">Badges</a></li>
+          <li><a href="#">Breadcrumbs</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+      <li class="divider" data-text="main">Main</li>
+
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Alert</a></li>
+          <li><a href="#">Badges</a></li>
+          <li><a href="#">Breadcrumbs</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+      <li class="divider" data-text="main">Main</li>
+
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Alert</a></li>
+          <li><a href="#">Badges</a></li>
+          <li><a href="#">Breadcrumbs</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+
+      <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+
+      <li class="divider" data-text="table and forms">Calender</li>
+
+      <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+      <li>
+        <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+      <li class="divider" data-text="main">Main</li>
+
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Alert</a></li>
+          <li><a href="#">Badges</a></li>
+          <li><a href="#">Breadcrumbs</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+      <li class="divider" data-text="main">Main</li>
+
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Elements <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Alert</a></li>
+          <li><a href="#">Badges</a></li>
+          <li><a href="#">Breadcrumbs</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </li>
+
     </ul>
-  </div>
-  <!-- Main Screen -->
-  <div class="content">
-    <h2>Welcome to My Website</h2>
-    <p>This is a basic layout with a top navbar and a left sidebar.</p>
-  </div>
+    <div class="ads">
+      <div class="wrapper">
+        <a href="#" class="btn-upgrade">Upgrade</a>
+        <p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+      </div>
+    </div>
+  </section>
+  <!-- SIDEBAR -->
 
+  <!-- NAVBAR -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+      <div id="dashboard">
+        <i class="fa-solid fa-bars toggle-sidebar"></i>
+      </div>
+      <div class="right_nav">
+        <div id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="search">
+        </div>
+
+        <!-- dark/light_mode -->
+        <div id="dark/light_mode">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+        <!-- notification -->
+        <a href="#" class="nav-link notification">
+          <i class="fa-regular fa-bell icon"></i>
+
+          <span class="badge"></span>
+        </a>
+
+        <div class="profile">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <ul class="profile-link">
+            <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+            <hr>
+            <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+            <hr>
+            <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <main>
+      <h1 class="title">Dashboard</h1>
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li class="divider">/</li>
+        <li><a href="#" class="active">Dashboard</a></li>
+      </ul>
+      <div class="info-data">
+        <div class="card">
+
+          <div class="data">
+            <div class="content-data card1">
+              <div class="head">
+                <h3>Finance Flow</h3>
+                <div class="menu">
+                  <i class="fa-solid fa-capsules icon"></i>
+                  <ul class="menu-link">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="#">Remove</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="chart">
+                <div id="chart"></div>
+              </div>
+            </div>
+
+            <div class="content-data card2">
+              <div class="head">
+                <h3>Tracker</h3>
+                <div class="menu">
+                  <i class="fa-regular fa-floppy-disk icon"></i>
+                  <ul class="menu-link">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="#">Remove</a></li>
+                  </ul>
+                </div>
+              </div>
+              <form action="#">
+                <div class="form-group">
+                  <input class="explain_expe" type="text" placeholder="Grocieries , Shopping, Investment">
+                  <input type="number" placeholder="Enter the Amount">
+                  <select name="Tracker" id="Tracker">
+                    <option value="Salary">Salary</option>
+                    <option value="Saving">Saving</option>
+                    <option value="Investment">Investment</option>
+                  </select>
+                  <input class="explain_loca" type="text" placeholder="Enter Your Locatio">
+
+                  <input type="date" id="dateInput">
+                  <button class="btn-send">Save</button>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="content-data card3">
+              <div class="card_head">
+                <h3>Expenses</h3>
+                <i class="fa-solid fa-indian-rupee-sign icon"></i>
+              </div>
+              <div class="card_info">
+                <div>
+                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 42.9K</h2>
+                  <small>Total Spend</small>
+                </div>
+                <span class="expenss_rate">0.41 <i class="fa-solid fa-arrow-up"></i></span>
+              </div>
+              <div class="progress_section">
+                <div class="progress-container">
+                  <div class="progress-bar progress-bar1" style="width: 76%"></div>
+                </div>
+
+                <a href="#" class="link-icon icon"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="content-data card4">
+              <div class="card_head">
+                <h3>Saving</h3>
+                <i class="fa-regular fa-eye icon "></i>
+              </div>
+              <div class="card_info">
+                <div>
+                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 102.9K</h2>
+                  <small>Total Saving</small>
+                </div>
+                <span class="expenss_rate">9.41 <i class="fa-solid fa-arrow-up"></i></span>
+              </div>
+              <div class="progress_section">
+                <div class="progress-container">
+                  <div class="progress-bar progress-bar2" style="width: 86%"></div>
+                </div>
+
+                <a href="#" class="link-icon"><i class="fa-solid fa-up-right-from-square icon"></i></a>
+              </div>
+            </div>
+
+            <div class="content-data card5">
+              <div class="card_head">
+                <h3>Investment</h3>
+                <i class="fa-solid fa-cube icon"></i>
+              </div>
+              <div class="card_info">
+                <div>
+                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 20.01K</h2>
+                  <small>Total Investment</small>
+                </div>
+                <span class="expenss_rate">1.41 <i class="fa-solid fa-arrow-up"></i></span>
+              </div>
+              <div class="progress_section">
+                <div class="progress-container">
+                  <div class="progress-bar progress-bar3 icon" style="width: 17%"></div>
+                </div>
+
+                <a href="#" class="link-icon"><i class="fa-solid fa-up-right-from-square icon"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+
+    </main>
+    <!-- MAIN -->
+  </section>
+  <!-- NAVBAR -->
 
   <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
   <script src="script.js"></script>
 
   </body>

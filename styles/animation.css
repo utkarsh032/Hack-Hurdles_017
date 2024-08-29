@@ -18,3 +18,23 @@
 .badge {
   animation: pulse 2s infinite;
 }
+
+@keyframes breathing {
+  0% {
+    transform: scale(0.98);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.98);
+  }
+}
+
+.card3,
+.card4,
+.card5 {
+  animation: breathing 4s ease-in-out infinite;
+}
