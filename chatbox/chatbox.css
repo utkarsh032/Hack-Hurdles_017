@@ -246,9 +246,9 @@ body {
 }
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
+    width: 100%;
   }
   .main-content {
-    width: 100%;
+    display: none;
   }
 }

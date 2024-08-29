@@ -112,14 +112,24 @@
                 <div class="input-box">
                     <input type="text" placeholder="Type something here...">
                     <div>
-                        <button class="file_icon"><i class="fa-solid fa-paperclip"></i></button>
+                        <!-- Hidden File Input -->
+                        <input type="file" id="file_input" style="display: none;">
+                        
+                        <!-- Attach Button -->
+                        <button class="file_icon" id="attach_button">
+                            <i class="fa-solid fa-paperclip"></i>
+                        </button>
+                        
+                        <!-- Emoji Button -->
                         <button class="emoji_icon"><i class="fa-solid fa-face-smile"></i></button>
                     </div>
                 </div>
                 <button class="send_button"><i class="fa-solid fa-paper-plane"></i></button>
             </div>
+            
         </div>
     </div>
+    <script src="chatbot.js"></script>
     <script src="https://kit.fontawesome.com/38e95fb4e5.js" crossorigin="anonymous"></script>
 </body>
 </html>
