@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    /* .header-container h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .header-container h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+     */
+        
+        .content {
+  margin-left: 21%;
+  margin-top: 8vh;
+  padding: 15px;
+  
+  /* flex: 1; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 1250px;
+  width: 80%;
+  flex-direction: row;
+  background-color:#000e1b;
+  /* padding-left: 150px; */
+
+}
+        #d1
+{
+  background-color:#132031;
+  height: 1120px ;
+  width: 55%;
+  margin-top: 3.1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:  space-around;
+}
+#d2
+{
+  background-color:#132031;
+  height: 1120px ;
+  width: 45%;
+  margin-top: 3.1%;
+  
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+#d1>div
+{
+  /* #243040 */
+  padding: 30px;
+  background-color:#132031;
+  height: 1000px ;
+  width: 60%;
+  margin-top: 3.1%;
+  /* box-shadow: rgba(0, 0, 0, 0.526) 0px 5px 15px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 100px;
+  /* border: 5px solid white; */
+  border-radius: 10px;
+  margin: 50px;
+  /* padding-right: 50px; */
+}
+#d2>div
+{
+  background-color:#243040;
+  height: 990px ;
+  width: 80%;
+  margin-top: 3.1%;
+  box-shadow: rgba(14, 13, 13, 0.977) 0px 5px 15px;
+  /* border: 5px solid white; */
+  border-radius: 10px;
+  margin: 40px;
+  padding: 50px;
+    padding-bottom: 30px;
+
+  
+  /* padding-right: 50px; */
+}
+
+
+/* Form Styling */
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form p {
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+  margin-bottom: 23px;
+  font-size: 23px;
+}
+
+form input {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0 20px; /* Reduced bottom margin */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #1e2a36;
+  color: #fff;
+  height: 45px;
+  display: inline-block
+}
+
+form input::placeholder {
+  color: #999;
+  font-size: 20px;
+}
+
+
+.google-signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 80px;
+  width: 823px;
+  padding: 1px;
+  margin: 8px 0 20px;
+  background-color: #1e2a36;
+  color: #d9cdcd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 23px;
+}
+
+label {
+  color: white;
+  font-size: 23px;
+}
+
+.remember-forgot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  /* margin-top: 10px; */
+}
+.reminder label {
+  margin: 0;
+  display: inline-block; /* Ensures the label stays on the same line as the checkbox */
+}
+
+.reminder {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.reminder input[type="checkbox"] {
+  /* margin-right: 10px; */
+  margin-right: 5px; /* Reduce space between checkbox and label */
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color:#1e2a36; /* Black background */
+    border: 1px solid#1e2a36; /* Black border */
+    cursor: pointer;
+
+}
+.reminder input[type="checkbox"]:checked {
+    background-color: #413939;
+    position: relative;
+}
+
+.reminder input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: #fff; /* White checkmark */
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-size: 14px;
+}
+
+.signin-btn {
+  
+  font-size: 22px;
+  height: 70px;
+  width: 839px;
+  /* width: 100%; */
+  padding: 13px;
+  margin: 20px 0;
+  background-color: #5650f0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 45px;
+  height: ;
+}
+.input-container i {
+  /* padding-left: 150px; */
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  /* position: absolute; */
+  left: 730px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #888;
+}
+input-container {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+
+}
+google-signin-btn:hover {
+  background-color: #357ae8; /* Darker blue on hover */
+}
+
+.google-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; /* Space between icon and text */
+}
+
+form a {
+  color:white;
+  text-decoration: none;
+  padding-top: 8px;
+  font-size: 25px;
+}
+.line-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  
+}
+
+.line {
+  
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #6c6666a1; /* Line color */
+  margin: 0 10px; /* Spacing between the lines and text */
+}
+
+.text {
+  padding: 0 10px; /* Space around the text */
+  color: #d9cdcd; /* Text color */
+  font-size: 16px; /* Text size */
+}
+#signup_link{
+  color :rgb(79, 112, 233);
+  font-weight:larger ;
+}
+
+
+#side_conainer>img
+{
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+#side_conainer> h2
+{
+  color:#b3c5d3;
+  font-size: 25px;
+  /* line-height: 10px; */
+}
+#side_conainer> h1
+{
+  color:white;
+  font-size: 50px;
+  line-height: 100px;
+}
+#side_conainer> p
+{
+  color:#b3c5d3;
+  font-size: 35px;
+  /* line-height: 10px; */
+}
+#signintext{
+    color: rgb(243, 232, 232);
+    text-align-last: center;
+    font-size: 55px;
+}
+
+#side_conainer> p +img
+{
+  /* margin: 100px; */
+  height: auto;
+  margin-bottom: 60px;
+  margin-left: 120px;
+  width: 65%;
+  background-color: transparent;
+  box-sizing: border-box;
+  /* line-height: 10px; */
+}
+.brand {
+    font-size: 33px;
+}
+/* Keyframe animation for the logo */
+@keyframes logoBounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Keyframe animation for the brand text */
+    @keyframes textColorChange {
+        0% {
+            color: #c89191;
+        }
+        50% {
+            color: #ffcc00;
+        }
+        100% {
+            color: #ffffff;
+        }
+    }
+
+    #side_conainer .brand_logo {
+        animation: logoBounce 1s infinite; /* Bounce animation */
+    }
+
+    #side_conainer .logo {
+        animation: textColorChange 2s infinite; /* Color change animation */
+    }
+
+    </style>
+</head>
+<body>
+    
+      <!-- Main Screen -->
+      <div class="content">
+        
+        
+          <div id="d1" class="child-container">   
+            <div> 
+                <h1 id="signintext">Sign In</h1>
+              <form action="">
+                
+                  <button class="google-signin-btn">
+                     <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-256.png" alt="" class="google-icon"> Sign in with Google</button>
+                  <!-- <p>Or sign up with email</p> -->
+                  <div class="line-wrapper">
+                    <hr class="line"/>
+                    <span class="text" style="font-size: 22px;">Or sign in with email</span>
+                    <hr class="line"/>
+                  </div>
+                  <label for="">Email</label>
+                  <div class="input-container">
+                    <i class="fa-regular fa-envelope fa-lg" style="color: #9499a4;"></i>
+            <input type="email" placeholder="Enter your email" />
+            
+        </div>
+                  <label for="">Passsword</label>
+                  <div class="input-container">
+                   <i class="fa-solid fa-lock fa-lg" style="color: #b9bcc0;"></i>
+                    <input type="password" placeholder="Password" required>
+                  </div>
+                  
+                  <div class="remember-forgot">
+                    <div class="reminder">
+                      <input type="checkbox" id="reminderCheckbox">
+                      <label for="reminderCheckbox" style="display: inline-block;">Remember me</label>
+                  </div>
+                  <a href="#">Forgot Password?</a>
+                    
+                  </div>
+                  <button type="submit" class="signin-btn">Sign In</button>
+                  <p>Dont't have any account? <a href="#" id="signup_link">Sign Up</a></p>
+              </form>
+              
+            </div>
+                    
+          </div>
+          <div id="d2">
+            <div id="side_conainer">
+    
+                <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+                    FinanceFlow</span></a>
+              <h2>Sign in to your account</h2>
+              <h1>Welcome Back!</h1>
+              <p>Please sign in to your account by completing the necessary fields below.</p>
+              <img src="https://demo.nextadmin.co/images/grids/grid-02.svg" alt="">
+            </div>
+          </div>
+      </div>
+    
+    
+      <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    
+      </body>
+    <script src="https://kit.fontawesome.com/ba90694c48.js" crossorigin="anonymous"></script>
+</body>
+</html>
