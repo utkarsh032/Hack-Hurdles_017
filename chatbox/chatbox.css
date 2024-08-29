@@ -29,7 +29,7 @@ body {
   overflow: hidden;
 }
 .sidebar {
-  width: 300px;
+  width: 20%;
   background-color: #2f3136;
   overflow-y: auto;
 }
@@ -298,6 +298,14 @@ body {
 .main_profile_header_right > i {
   cursor: pointer;
 }
+
+
+@media screen and (max-width:1065px) {
+    .sidebar {
+        width: 30%;
+      }
+}
+
 
 @media (max-width: 768px) {
   .sidebar {
