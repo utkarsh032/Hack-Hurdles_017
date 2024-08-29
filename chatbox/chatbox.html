@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages UI</title>
+    <link rel="stylesheet" href="chatbox.css" />
+  </head>
+  <body>
+    <div class="top-header">
+      <h2>Messages</h2>
+      <p>Dashboard / <span>Messages</span></p>
+    </div>
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="active-conversations">
+          <span>Active Conversations</span>
+          <div class="active-count">7</div>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="conversation">
+          <div class="avatar">
+            <img src="./images/avatar_147142.png" alt="David Hello" />
+          </div>
+          <div class="conversation-info">
+            <div class="conversation-name">David Hello</div>
+            <div class="conversation-last-message">Hello, how are you?</div>
+          </div>
+          <div class="unread-badge">3</div>
+        </div>
+        <div class="conversation">
+          <div class="avatar">
+            <img src="./images/avatar_147142.png" alt="Henry Fisher" />
+          </div>
+          <div class="conversation-info">
+            <div class="conversation-name">Henry Fisher</div>
+            <div class="conversation-last-message">I am waiting for you</div>
+          </div>
+        </div>
+        <div class="conversation">
+          <div class="avatar">
+            <img src="./images/avatar_147142.png" alt="David Hello" />
+          </div>
+          <div class="conversation-info">
+            <div class="conversation-name">Robinson</div>
+            <div class="conversation-last-message">Can we do it tomorrow</div>
+          </div>
+          <div class="unread-badge">3</div>
+        </div>
+        <div class="conversation">
+          <div class="avatar">
+            <img src="./images/avatar_147142.png" alt="David Hello" />
+          </div>
+          <div class="conversation-info">
+            <div class="conversation-name">Maria</div>
+            <div class="conversation-last-message">How can i help you</div>
+          </div>
+          <div class="unread-badge">3</div>
+        </div>
+        <div class="conversation">
+          <div class="avatar">
+            <img src="./images/avatar_147142.png" alt="David Hello" />
+          </div>
+          <div class="conversation-info">
+            <div class="conversation-name">John</div>
+            <div class="conversation-last-message">Where do you live?</div>
+          </div>
+          <div class="unread-badge">7</div>
+        </div>
+        <div class="conversation">
+          <div class="avatar">
+            <img src="./images/avatar_147142.png" alt="David Hello" />
+          </div>
+          <div class="conversation-info">
+            <div class="conversation-name">Leoj</div>
+            <div class="conversation-last-message">Come over</div>
+          </div>
+          <div class="unread-badge">1</div>
+        </div>
+        <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="David Hello" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">David Hello</div>
+              <div class="conversation-last-message">Hello, how are you?</div>
+            </div>
+            <div class="unread-badge">3</div>
+          </div>
+          
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="Sarah Lee" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">Sarah Lee</div>
+              <div class="conversation-last-message">See you at 6 PM!</div>
+            </div>
+            <!-- No unread badge -->
+          </div>
+          
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="John Doe" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">John Doe</div>
+              <div class="conversation-last-message">Meeting rescheduled.</div>
+            </div>
+            <div class="unread-badge">5</div>
+          </div>
+          
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="Emily Smith" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">Emily Smith</div>
+              <div class="conversation-last-message">Happy Birthday!</div>
+            </div>
+            <!-- No unread badge -->
+          </div>
+          
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="Michael Brown" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">Michael Brown</div>
+              <div class="conversation-last-message">Let's catch up soon.</div>
+            </div>
+            <div class="unread-badge">1</div>
+          </div>
+          
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="Sophia Green" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">Sophia Green</div>
+              <div class="conversation-last-message">Are you coming tonight?</div>
+            </div>
+            <!-- No unread badge -->
+          </div>
+          
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="James White" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">James White</div>
+              <div class="conversation-last-message">Check your email.</div>
+            </div>
+            <div class="unread-badge">2</div>
+          </div>
+          
+        
+        <!-- Add more conversations here -->
+      </div>
+      <div class="main-content">
+        <div class="chat-header">
+          <div class="chat_header_main">
+            <div class="main_profile_container">
+              <img
+                class="profile_image"
+                src="./images/avatar_147142.png"
+                alt="profile"
+              />
+            </div>
+            <div>
+              <p class="profile_name">Henry Dholi</p>
+              <p class="last_seen">Last active 5min ago</p>
+            </div>
+          </div>
+          <div class="main_profile_header_right">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <i id="close" class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="chat-area">
+            <div class="message received">
+              <p>Andre Thomas</p>
+              <div class="message-bubble">
+                I want to make an appointment tomorrow from 2:00 to 5:00pm?
+              </div>
+              <div class="message-time">1:55pm</div>
+            </div>
+          
+            <div class="message sent">
+              <div class="message-bubble">
+                Hello, Thomas! I will check the schedule and inform you.
+              </div>
+              <div class="message-time">1:58pm</div>
+            </div>
+          
+            <div class="message received">
+              <p>Andre Thomas</p>
+              <div class="message-bubble">
+                Also, I wanted to discuss the financial report from last quarter. We need to look into the expenses for marketing.
+              </div>
+              <div class="message-time">2:03pm</div>
+            </div>
+          
+            <div class="message sent">
+              <div class="message-bubble">
+                Yes, I noticed the marketing expenses were higher than expected. We should go through the details and see where we can optimize.
+              </div>
+              <div class="message-time">2:06pm</div>
+            </div>
+          
+            <div class="message received">
+              <p>Andre Thomas</p>
+              <div class="message-bubble">
+                Agreed. I think we can reduce costs by focusing more on digital marketing. It’s more cost-effective than traditional methods.
+              </div>
+              <div class="message-time">2:10pm</div>
+            </div>
+          
+            <div class="message sent">
+              <div class="message-bubble">
+                That’s a good idea. I’ll prepare a comparison between the costs of digital vs. traditional marketing for our next meeting.
+              </div>
+              <div class="message-time">2:12pm</div>
+            </div>
+          
+            <div class="message received">
+              <p>Andre Thomas</p>
+              <div class="message-bubble">
+                Perfect! Let’s aim to finalize the budget adjustments by the end of the week.
+              </div>
+              <div class="message-time">2:15pm</div>
+            </div>
+          
+            <div class="message sent">
+              <div class="message-bubble">
+                Sounds good. I’ll keep you updated.
+              </div>
+              <div class="message-time">2:17pm</div>
+            </div>
+          </div>
+          
+        <div class="input-area">
+          <div class="input-box">
+            <input type="text" placeholder="Type something here..." />
+            <div>
+              <!-- Hidden File Input -->
+              <input type="file" id="file_input" style="display: none" />
+
+              <!-- Attach Button -->
+              <button class="file_icon" id="attach_button">
+                <i class="fa-solid fa-paperclip"></i>
+              </button>
+
+              <!-- Emoji Button -->
+              <button class="emoji_icon">
+                <i class="fa-solid fa-face-smile"></i>
+              </button>
+            </div>
+          </div>
+          <button class="send_button">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="main_content_default">
+        <div class="main_content_default_img_container">
+          <img
+            class="default_img"
+            src="https://cdni.iconscout.com/illustration/premium/thumb/expense-management-illustration-download-in-svg-png-gif-file-formats--business-finance-strategy-concept-pack-illustrations-3561009.png"
+            alt="default_img"
+          />
+          <p class="default_message_page_text1">
+            Stay connected with your finance buddies!
+          </p>
+          <p class="default_message_page_text2">
+            secure and encrypted <i class="fa-solid fa-lock"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="chatbot.js"></script>
+    <script
+      src="https://kit.fontawesome.com/38e95fb4e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
