@@ -21,7 +21,7 @@ body {
 }
 
 .top-header p span {
-  color: rgb(177, 19, 19);
+  color: gray;
 }
 .main-container {
   display: flex;
@@ -86,7 +86,7 @@ body {
   height: 35px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color: #7289da;
+  /* background-color: #7289da; */
   overflow: hidden;
 }
 .avatar img {
@@ -125,7 +125,7 @@ body {
   border-bottom: 1px solid gray;
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .last_seen {
@@ -157,6 +157,10 @@ body {
   background-color: #40444b;
   color: white;
   float: left;
+  max-width: 65%;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
 }
 
 .message.received p {
@@ -168,6 +172,10 @@ body {
   background-color: #7289da;
   color: white;
   float: right;
+  max-width: 65%;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
 }
 .message-time {
   font-size: 0.8em;
@@ -215,7 +223,7 @@ body {
 }
 
 .input-box .emoji_icon {
-    background-color: transparent;
+  background-color: transparent;
   color: white;
   border: none;
   border-radius: 50%;
@@ -233,22 +241,73 @@ body {
   width: 100%;
 }
 
-
-.send_button{
-    width: 50px;
-    height: 100%;
-    border-radius: 10px;
-  background-color: rgb(177, 19, 19);
-   border: none;
-   color: white;
-   font-size: 16px;
-   cursor: pointer;
+.send_button {
+  width: 50px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #7289da;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
+
+.main_content_default {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+
+.main-content {
+  display: none;
+}
+
+.main_content_default_img_container {
+  width: 40%;
+}
+
+.default_message_page_text1 {
+  text-align: center;
+  font-size: 17px;
+  color: gray;
+}
+
+.default_message_page_text2 {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.default_img {
+  width: 100%;
+}
+
+.chat_header_main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.main_profile_header_right {
+  display: flex;
+  gap: 20px;
+}
+
+.main_profile_header_right > i {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
   }
   .main-content {
+    display: none;
+  }
+
+  .main_content_default {
     display: none;
   }
 }
