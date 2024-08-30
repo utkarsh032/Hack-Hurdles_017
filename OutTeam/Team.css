@@ -1,0 +1,79 @@
+.team {
+  margin-top: 4rem;
+}
+
+.t-card-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.t-card {
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.t-card:nth-of-type(1) {
+  transform: rotate(-2deg);
+}
+
+.t-card:nth-of-type(2) {
+  transform: rotate(2deg);
+}
+
+.t-card:nth-of-type(3) {
+  transform: rotate(-2deg);
+}
+
+.t-card:nth-of-type(4) {
+  transform: rotate(2deg);
+}
+
+.t-card.rotate {
+  transform: rotate(0);
+}
+
+.t-card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.t-card:hover .cover-img {
+  opacity: 0;
+}
+
+.t-card:hover .bg-video {
+  opacity: 1;
+  transform: scale(1.5);
+  z-index: 10;
+}

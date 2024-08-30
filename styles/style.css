@@ -338,7 +338,7 @@ nav .toggle-sidebar {
 }
 
 nav .form-group {
-  background-color: red;
+  /* background-color: red; */
 }
 
 nav .form-group .icon {
@@ -434,7 +434,6 @@ nav .profile .profile-link a:hover {
 main {
   margin-top: 3rem;
   padding: 1rem 2.5rem;
-
 }
 
 main .title {
@@ -730,7 +729,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[type="date"]::-moz-focus-inner {
   border: 0;
-  background-color: red;
 }
 
 
@@ -750,3 +748,4 @@ main .btn-send:hover {
 
 /* MAIN */
 /* CONTENT */
+/* Our Team */
