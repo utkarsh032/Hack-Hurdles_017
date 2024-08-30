@@ -1,151 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <link rel="stylesheet" href="aboutUs.css" />
-  </head>
-  <body>
-    <main>
-      <section class="sec1_hero_container">
-        <div>
-          <p class="sec1_p1">About Us</p>
-          <p class="sec1_p2">
-            Empowering individuals to take control of their finances with
-            intuitive and smart tracking tools that simplify budgeting, saving,
-            and investing for a more confident financial future.
-          </p>
-          <hr class="hr">
-        </div>
-      </section>
 
-      <section class="sec2">
-        <div class="sec2_conatiner">
-          <div class="sec2_main_box1">
-            <div class="sec2_box_left">
-              <img
-                class="sec2_box_img"
-                src="images/planing.png"
-                alt="economist"
-              />
-            </div>
-            <div class="sec2_box_right">
-              <p class="sec2_box_right_p1">Comprehensive Budget Planning</p>
-              <p></p>
-              <p class="sec2_box_right_p2">
-                Our advanced tools empower you to create and maintain a budget
-                that not only aligns with your financial goals but also adapts
-                to your lifestyle. By providing in-depth analysis and
-                personalized recommendations, we ensure that your budget becomes
-                a powerful tool for achieving long-term financial stability and
-                growth.
-              </p>
-            </div>
-          </div>
-          <div class="sec2_main_box2">
-            <div class="sec2_box_left">
-              <img
-                class="sec2_box_img"
-                src="./images/expense.png"
-                alt="economist"
-              />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us</title>
+  <link rel="stylesheet" href="aboutUs.css" />
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/special.css">
+  <link rel="stylesheet" href="../styles/responsiveness.css">
+</head>
 
-              
-            </div>
-            <div class="sec2_box_right">
-              <p class="sec2_box_right_p1">Effortless Expense Tracking</p>
-              <p></p>
-              <p class="sec2_box_right_p2">
-                Experience the ease of logging and categorizing your expenses
-                with our intuitive interface. Our sophisticated algorithms
-                provide deep insights into your spending habits, highlighting
-                areas for potential savings and improvement. This comprehensive
-                view of your financial behavior enables you to make informed
-                decisions and optimize your spending patterns for better
-                financial health.
-              </p>
-            </div>
+<body>
+  <nav class="navbar" style="width: 100%;">
+    <div id="dashboard">
+      <a href="#" style="color: #5750F1; font-weight: 700; font-size: 2rem;"><i
+          class="fa-solid fa-circle-notch brand_logo"></i> FinanceFlow</a>
+    </div>
+    <div class="right_nav">
+      <div id="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="search">
+      </div>
+
+      <!-- dark/light_mode -->
+      <div id="dark/light_mode">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+      <!-- notification -->
+      <a href="#" class="nav-link notification">
+        <i class="fa-regular fa-bell icon"></i>
+
+        <span class="badge"></span>
+      </a>
+
+      <div class="profile">
+        <img
+          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <ul class="profile-link">
+          <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+          <hr>
+          <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+          <hr>
+          <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="sec1_hero_container">
+      <div>
+        <p class="sec1_p1">About Us</p>
+        <p class="sec1_p2">
+          Empowering individuals to take control of their finances with
+          intuitive and smart tracking tools that simplify budgeting, saving,
+          and investing for a more confident financial future.
+        </p>
+        <hr class="hr">
+      </div>
+    </section>
+
+    <section class="sec2">
+      <div class="sec2_conatiner">
+        <div class="sec2_main_box1">
+          <div class="sec2_box_left">
+            <img class="sec2_box_img"
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/expense-tracking-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--budgeting-tools-personal-finance-saving-money-budget-tracker-financial-planning-pack-business-illustrations-8060296.png?f=webp"
+              alt="economist" />
           </div>
-          <div class="sec2_main_box3">
-            <div class="sec2_box_left">
-              <img
-                class="sec2_box_img"
-                src="./images/analytic.png"
-                alt="economist"
-              />
-            </div>
-            <div class="sec2_box_right">
-              <p class="sec2_box_right_p1">Actionable Financial Insights</p>
-              <p></p>
-              <p class="sec2_box_right_p2">
-                Unlock the power of your financial data with our advanced
-                analytics. Receive personalized recommendations and
-                visualizations that not only help you understand your current
-                financial situation but also guide you towards making informed
-                decisions for your future. Our actionable insights cover
-                everything from investment opportunities to debt management
-                strategies, ensuring you're always one step ahead in your
-                financial journey.
-              </p>
-            </div>
+          <div class="sec2_box_right">
+            <p class="sec2_box_right_p1">Comprehensive Budget Planning</p>
+            <p></p>
+            <p class="sec2_box_right_p2">
+              Our advanced tools empower you to create and maintain a budget
+              that not only aligns with your financial goals but also adapts
+              to your lifestyle. By providing in-depth analysis and
+              personalized recommendations, we ensure that your budget becomes
+              a powerful tool for achieving long-term financial stability and
+              growth.
+            </p>
           </div>
         </div>
-      </section>
+        <div class="sec2_main_box2">
+          <div class="sec2_box_left">
+            <img class="sec2_box_img"
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/expenses-3d-icon-download-in-png-blend-fbx-gltf-file-formats--financial-crisis-debt-economic-money-down-global-economy-and-finance-pack-business-icons-6430512.png?f=webp"
+              alt="economist" />
 
-      <section class="sec3">
-        <div class="sec3_container">
-          <div class="sec3_box">
-            <div class="sec3_img_container">
-              <img
-                class="sec3_img"
-                src="./images/pngegg.png"
-                alt="personalised"
-              />
-            </div>
-            <div>
-              <p class="sec3_p1">Personalized Approach</p>
-              <p class="sec3_p2">
-                Tailored financial strategies based on your unique situation and
-                goals.
-              </p>
-            </div>
-          </div>
 
-          <div class="sec3_box">
-            <div class="sec3_img_container">
-              <img
-                class="sec3_img"
-                src="./images/security.png"
-                alt="personalised"
-              />
-            </div>
-            <div>
-              <p class="sec3_p1">Secure Platform</p>
-              <p class="sec3_p2">
-                Bank-level encryption to keep your financial data safe and
-                protected.
-              </p>
-            </div>
           </div>
-          <div class="sec3_box">
-            <div class="sec3_img_container">
-              <img
-                class="sec3_img"
-                src="./images/support.png"
-                alt="personalised"
-              />
-            </div>
-            <div>
-              <p class="sec3_p1">Expert Support</p>
-              <p class="sec3_p2">
-                Access to financial advisors for guidance and support when you
-                need it.
-              </p>
-            </div>
+          <div class="sec2_box_right">
+            <p class="sec2_box_right_p1">Effortless Expense Tracking</p>
+            <p></p>
+            <p class="sec2_box_right_p2">
+              Experience the ease of logging and categorizing your expenses
+              with our intuitive interface. Our sophisticated algorithms
+              provide deep insights into your spending habits, highlighting
+              areas for potential savings and improvement. This comprehensive
+              view of your financial behavior enables you to make informed
+              decisions and optimize your spending patterns for better
+              financial health.
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="sec2_main_box3">
+          <div class="sec2_box_left">
+            <img class="sec2_box_img"
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/budget-calculation-3d-icon-download-in-png-blend-fbx-gltf-file-formats--finances-expenses-income-banking-and-finance-pack-business-icons-8825171.png"
+              alt="economist" />
+          </div>
+          <div class="sec2_box_right">
+            <p class="sec2_box_right_p1">Actionable Financial Insights</p>
+            <p></p>
+            <p class="sec2_box_right_p2">
+              Unlock the power of your financial data with our advanced
+              analytics. Receive personalized recommendations and
+              visualizations that not only help you understand your current
+              financial situation but also guide you towards making informed
+              decisions for your future. Our actionable insights cover
+              everything from investment opportunities to debt management
+              strategies, ensuring you're always one step ahead in your
+              financial journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3">
+      <div class="sec3_container">
+        <div class="sec3_box">
+          <div class="sec3_img_container">
+            <img class="sec3_img" src="./images/pngegg.png" alt="personalised" />
+          </div>
+          <div>
+            <p class="sec3_p1">Personalized Approach</p>
+            <p class="sec3_p2">
+              Tailored financial strategies based on your unique situation and
+              goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="sec3_box">
+          <div class="sec3_img_container">
+            <img class="sec3_img" src="./images/security.png" alt="personalised" />
+          </div>
+          <div>
+            <p class="sec3_p1">Secure Platform</p>
+            <p class="sec3_p2">
+              Bank-level encryption to keep your financial data safe and
+              protected.
+            </p>
+          </div>
+        </div>
+        <div class="sec3_box">
+          <div class="sec3_img_container">
+            <img class="sec3_img" src="./images/support.png" alt="personalised" />
+          </div>
+          <div>
+            <p class="sec3_p1">Expert Support</p>
+            <p class="sec3_p2">
+              Access to financial advisors for guidance and support when you
+              need it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="../script.js"></script>
+  <script src="inbox_script.js"></script>
+</body>
+
 </html>
