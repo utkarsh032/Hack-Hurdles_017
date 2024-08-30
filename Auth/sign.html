@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/animation.css">
-  <link rel="stylesheet" href="./styles/responsiveness.css">
-  <link rel="stylesheet" href="./styles/special.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>FinanceFlow || A support in Finance...</title>
-
+  <link rel="stylesheet" href="sign.css">
+  <link rel="stylesheet" href="../styles/special.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/responsiveness.css">
+  <link rel="stylesheet" href="../styles/animation.css">
+  <title>Auth</title>
 </head>
 
-<body">
+<body>
   <!-- SIDEBAR -->
   <section id="sidebar">
-    <a href="/" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+    <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
         FinanceFlow</span></a>
 
     <!-- SideMenu -->
@@ -87,16 +87,16 @@
 
       <li class="divider" data-text="SUPPORT">SUPPORT</li>
       <li>
-        <a href="./chatbox/chatbox.html">
-          <i class='fas fa-envelope icon'></i> Chat
+        <a href="#">
+          <i class='fas fa-envelope icon'></i> Messages
           <span class="right-group">
-            <!-- <span class="side-box">5</span> -->
-            <!-- <span class="side-pro side-box">PRO</span> -->
+            <span class="side-box">5</span>
+            <span class="side-pro side-box">PRO</span>
           </span>
         </a>
       </li>
       <li>
-        <a href="./inbox/inbox.html">
+        <a href="#">
           <i class='fas fa-inbox icon'></i> Inbox
           <span class="right-group">
             <span class="side-pro side-box">PRO</span>
@@ -164,7 +164,7 @@
   </section>
   <!-- SIDEBAR -->
 
-  <!-- NAVBAR -->
+
   <section id="content">
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -210,141 +210,80 @@
     </nav>
     <!-- NAVBAR -->
 
-    <!-- MAIN -->
+    <!-- Auth -->
     <main>
-      <h1 class="title">Dashboard</h1>
+      <h1 class="title">Signin</h1>
       <ul class="breadcrumbs">
         <li><a href="#">Home</a></li>
         <li class="divider">/</li>
-        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#" class="active">Signin</a></li>
       </ul>
-      <div class="info-data">
-        <div class="card">
 
-          <div class="data">
-            <div class="content-data card1">
-              <div class="head">
-                <h3>Finance Flow</h3>
-                <div class="menu">
-                  <i class="fa-solid fa-capsules icon"></i>
-                  <ul class="menu-link">
-                    <li><a href="#">Edit</a></li>
-                    <li><a href="#">Save</a></li>
-                    <li><a href="#">Remove</a></li>
-                  </ul>
+      <div class="content">
+        <div id="d1" class="child-container">
+          <div>
+            <h1 id="signintext">Sign In</h1>
+            <form action="">
+              <button class="google-signin-btn">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-256.png" alt=""
+                  class="google-icon"> Sign in with Google</button>
+              <!-- <p>Or sign up with email</p> -->
+              <div class="line-wrapper">
+                <hr class="line" />
+                <span class="text" style="font-size: 22px;">Or sign in with email</span>
+                <hr class="line" />
+              </div>
+              <label for="">Email</label>
+              <div class="input-container">
+                <i class="fa-regular fa-envelope fa-lg" style="color: #9499a4;"></i>
+                <input type="email" placeholder="Enter your email" />
+
+              </div>
+              <label for="">Passsword</label>
+              <div class="input-container">
+                <i class="fa-solid fa-lock fa-lg" style="color: #b9bcc0;"></i>
+                <input type="password" placeholder="Password" required>
+              </div>
+
+              <div class="remember-forgot">
+                <div class="reminder">
+                  <input type="checkbox" id="reminderCheckbox">
+                  <label for="reminderCheckbox" style="display: inline-block;">Remember me</label>
                 </div>
-              </div>
-              <div class="chart">
-                <div id="chart"></div>
-              </div>
-            </div>
+                <a href="#">Forgot Password?</a>
 
-            <div class="content-data card2">
-              <div class="head">
-                <h3>Tracker</h3>
-                <div class="menu">
-                  <i class="fa-regular fa-floppy-disk icon"></i>
-                  <ul class="menu-link">
-                    <li><a href="#">Edit</a></li>
-                    <li><a href="#">Save</a></li>
-                    <li><a href="#">Remove</a></li>
-                  </ul>
-                </div>
               </div>
-              <form action="#">
-                <div class="form-group">
-                  <input class="explain_expe" type="text" placeholder="Grocieries , Shopping, Investment">
-                  <input type="number" placeholder="Enter the Amount">
-                  <select name="Tracker" id="Tracker">
-                    <option value="Salary">Salary</option>
-                    <option value="Saving">Saving</option>
-                    <option value="Investment">Investment</option>
-                  </select>
-                  <input class="explain_loca" type="text" placeholder="Enter Your Locatio">
-
-                  <input type="date" id="dateInput">
-                  <button class="btn-send">Save</button>
-                </div>
-              </form>
-
-            </div>
-
-            <div class="content-data card3">
-              <div class="card_head">
-                <h3>Expenses</h3>
-                <i class="fa-solid fa-indian-rupee-sign icon"></i>
-              </div>
-              <div class="card_info">
-                <div>
-                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 42.9K</h2>
-                  <small>Total Spend</small>
-                </div>
-                <span class="expenss_rate">0.41 <i class="fa-solid fa-arrow-up"></i></span>
-              </div>
-              <div class="progress_section">
-                <div class="progress-container">
-                  <div class="progress-bar progress-bar1" style="width: 76%"></div>
-                </div>
-
-                <a href="#" class="link-icon icon"><i class="fa-solid fa-up-right-from-square"></i></a>
-              </div>
-            </div>
-
-            <div class="content-data card4">
-              <div class="card_head">
-                <h3>Saving</h3>
-                <i class="fa-regular fa-eye icon "></i>
-              </div>
-              <div class="card_info">
-                <div>
-                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 102.9K</h2>
-                  <small>Total Saving</small>
-                </div>
-                <span class="expenss_rate">9.41 <i class="fa-solid fa-arrow-up"></i></span>
-              </div>
-              <div class="progress_section">
-                <div class="progress-container">
-                  <div class="progress-bar progress-bar2" style="width: 86%"></div>
-                </div>
-
-                <a href="#" class="link-icon"><i class="fa-solid fa-up-right-from-square icon"></i></a>
-              </div>
-            </div>
-
-            <div class="content-data card5">
-              <div class="card_head">
-                <h3>Investment</h3>
-                <i class="fa-solid fa-cube icon"></i>
-              </div>
-              <div class="card_info">
-                <div>
-                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 20.01K</h2>
-                  <small>Total Investment</small>
-                </div>
-                <span class="expenss_rate">1.41 <i class="fa-solid fa-arrow-up"></i></span>
-              </div>
-              <div class="progress_section">
-                <div class="progress-container">
-                  <div class="progress-bar progress-bar3 icon" style="width: 17%"></div>
-                </div>
-
-                <a href="#" class="link-icon"><i class="fa-solid fa-up-right-from-square icon"></i></a>
-              </div>
-            </div>
+              <button type="submit" class="signin-btn">Sign In</button>
+              <p>Dont't have any account? <a href="#" id="signup_link">Sign Up</a></p>
+            </form>
 
           </div>
 
+        </div>
+        <div id="d2">
+          <div id="side_conainer">
+
+            <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+                FinanceFlow</span></a>
+            <h2>Sign in to your account</h2>
+            <h1>Welcome Back!</h1>
+            <p>Please sign in to your account by completing the necessary fields below.</p>
+            <img src="https://demo.nextadmin.co/images/grids/grid-02.svg" alt="">
+          </div>
+        </div>
+      </div>
 
     </main>
-    <!-- MAIN -->
   </section>
+
   <!-- NAVBAR -->
+
 
   <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="../script.js"></script>
+  <script src="inbox_script.js"></script>
+</body>
 
-  <script src="script.js"></script>
-
-  </body>
 
 </html>

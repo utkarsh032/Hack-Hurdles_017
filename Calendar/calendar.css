@@ -1,0 +1,154 @@
+/* Basic Styles */
+body {
+  background-color: #020d1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  max-width: 80%;
+  margin: 20px;
+  background-color: #5750F1;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Calendar Header */
+.calendar-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.month {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Days of the Week */
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #5750F1;
+}
+
+.day-of-week {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 70px;
+  gap: 2px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #122031;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 20px;
+}
+
+.day:hover {
+  background-color: #374151;
+  transform: scale(1.05);
+}
+
+.day:nth-last-child(-n+4) {
+  background-color: #374151;
+  color: white;
+  cursor: alias !important;
+}
+
+.day:nth-last-child(-n+4):hover {
+  background-color: #374151;
+  color: #fff;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #22AD5C !important;
+  color: white;
+}
+
+.day:nth-of-type(10) {
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(0.9);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsate {
+  animation: pulse 1s infinite;
+}

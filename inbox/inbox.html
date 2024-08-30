@@ -1,100 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inbox</title>
     <link rel="stylesheet" href="inbox.css">
+    <link rel="stylesheet" href="../styles/special.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsiveness.css">
+    <link rel="stylesheet" href="../styles/animation.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="sidebar" id="sidebar">
-            <button class="compose_message"> <i class="fa-solid fa-circle-plus" style="color: white;"></i><span>Compose</span></button>
-            <ul>
-                <button class="compose_message_li"> <i class="fa-solid fa-circle-plus" style="color: white;"></i><span>Compose</span></button>
-                <li><a href="#"> <i class="fa-solid fa-inbox"></i><span>Inbox</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-star"></i>Starred</a></li>
-                <li><a href="#"><i class="fa-solid fa-clock"></i>Snoozed</a></li>   <!-- snooze icon is paid version i font awesome -->
-                <li><a href="#"><i class="fa-solid fa-paper-plane"></i>Sent</a></li>
-                <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>Drafts</a></li>
-                <li><a href="#"><i class="fa-solid fa-shield-virus"></i>Spam</a></li>
-                <li><a href="#"><i class="fa-solid fa-trash"></i>Trash</a></li>
-            </ul>
-        </div>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+                FinanceFlow</span></a>
 
-        <div class="main-content" id="main-content">
-            <header>
-                <div class="main_header_container">
-                    <div class="main_header_left">
-                        <input type="checkbox" title="Select all"/>
-                        <i class="fa-solid fa-trash-can" title="Delete"></i>
-                        <i class="fa-solid fa-arrows-rotate" title="Refresh"></i>
-                    </div>
-                    <div class="main_header_right">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Search for user, email address...">
-                    </div>
-                </div>
-            </header>
-            <div class="email-list">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class=""></th>
-                            <th>Sender</th>
-                            <th>Subject</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite" class="fa-solid fa-star"></i></td>
-                            <td>Musharof Chowdhury</td>
-                            <td class="text_desc">Some note & Lorem Ipsum available alteration in some form.</td>
-                            <td class="date_large_screen">17 Oct, 2024</td>
-                            <td class="date_small_screen">17/10/24</td>
-                        </tr>
-                        <tr>
-                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite2" class="fa-solid fa-star"></i></td>
-                            <td>Naimur Rahman</td>
-                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
-                            <td class="date_large_screen">25 Nov, 2024</td>
-                            <td class="date_small_screen">25/11/24</td>
+        <!-- SideMenu -->
+        <ul class="side-menu">
 
-                        </tr>
-                        <tr>
-                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite3" class="fa-solid fa-star"></i></td>
+            <li class="divider" data-text="main">Main</li>
 
-                            <td>Juhan Ahamed</td>
-                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
-                            <td class="date_large_screen">25 Nov, 2024</td>
-                            <td class="date_small_screen">25/11/24</td>
+            <li>
+                <a href="#"><i class='fas fa-tachometer-alt icon'></i> Dashboard <i
+                        class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Analytics<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Marketing<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">CRM<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Stocks<span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
 
-                        </tr>
-                        <tr>
-                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/> <i id="favourite4" class="fa-solid fa-star"></i></td>
 
-                            <td> Mahbub Hasan</td>
-                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
-                            <td class="date_large_screen">19 Dec, 2024</td>
-                            <td class="date_small_screen">19/12/24</td>
+            <li>
+                <a href="./Calendar/calendar.html">
+                    <i class='far fa-calendar-alt icon'></i> Calendar
+                    <span class="right-group">
+                        <span class="side-pro side-box">PRO</span>
+                    </span>
+                </a>
+            </li>
+            <a href="#"><i class='far fa-calendar-alt icon'></i> Profile</i></a>
 
-                        </tr>
-                        <tr>
-                            <td class="first_td"> <input class="input_checkbox" type="checkbox"/><i id="favourite5" class="fa-solid fa-star"></i></td>
-                            <td>Shafiq Hammad</td>
-                            <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
-                            <td class="date_large_screen">20 Dec, 2024</td>
-                            <td class="date_small_screen">20/12/24</td>
+            <li>
+                <a href="#"><i class='fas fa-tasks icon'></i> Task <i class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">List<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Kanban<span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
 
-                        </tr>
-                    </tbody>
-                </table>
+            <li>
+                <a href="#"><i class='fas fa-edit icon'></i> Forms <i class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Form </a></li>
+                    <li><a href="#">Pro Form <span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Form Layout</a></li>
+                    <li><a href="#">Form Layout <span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class='fas fa-table icon'></i> Tables <i class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Pro Tables <span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class='fas fa-file icon'></i> Pages <i class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Data Tables <span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Pricing Tables<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Error Page<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Faq's<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Teams<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Mail Success<span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
+
+            <li class="divider" data-text="SUPPORT">SUPPORT</li>
+            <li>
+                <a href="#">
+                    <i class='fas fa-envelope icon'></i> Messages
+                    <span class="right-group">
+                        <span class="side-box">5</span>
+                        <span class="side-pro side-box">PRO</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='fas fa-inbox icon'></i> Inbox
+                    <span class="right-group">
+                        <span class="side-pro side-box">PRO</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='fas fa-file-invoice icon'></i> Invoice
+                    <span class="right-group">
+                        <span class="side-pro side-box">PRO</span>
+                    </span>
+                </a>
+            </li>
+
+
+            <li class="divider" data-text="OTHERS">OTHERS</li>
+            <li>
+                <a href="#"><i class='fas fa-chart-bar icon'></i> Chart <i
+                        class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Basic Chart</a></li>
+                    <li><a href="#">Advance Chart<span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class='fas fa-cogs icon'></i> UI Elements <i
+                        class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Accordion<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">Avatars<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Badge<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Breadcrumbs<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Buttons Group<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Cards<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Carousel<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Dropdowns<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Images<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">List<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Modals<span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Notifications<span class="side-pro side-box">PRO</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class='fas fa-lock icon'></i> Authentication <i
+                        class='fas fa-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="#">Sign In <span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Sign Up <span class="side-pro side-box">PRO</span></a></li>
+                    <li><a href="#">Reset Password</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">2-Step Verification</a></li>
+                    <li><a href="#">Under Maintenance</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="ads">
+            <div class="wrapper">
+                <a href="#" class="btn-upgrade">Upgrade</a>
+                <p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- SIDEBAR -->
 
+
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <div id="dashboard">
+                <i class="fa-solid fa-bars toggle-sidebar"></i>
+            </div>
+            <div class="right_nav">
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="search">
+                </div>
+
+                <!-- dark/light_mode -->
+                <div id="dark/light_mode">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                <!-- notification -->
+                <a href="#" class="nav-link notification">
+                    <i class="fa-regular fa-bell icon"></i>
+
+                    <span class="badge"></span>
+                </a>
+
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <ul class="profile-link">
+                        <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+                        <hr>
+                        <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                        <hr>
+                        <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- Inbox -->
+        <div class="container">
+            <div class="sidebar_inbox" id="sidebar_inbox">
+                <button class="compose_message"> <i class="fa-solid fa-circle-plus"
+                        style="color: white;"></i><span>Compose</span></button>
+                <ul>
+                    <button class="compose_message_li"> <i class="fa-solid fa-circle-plus"
+                            style="color: white;"></i><span>Compose</span></button>
+                    <li><a href="#"> <i class="fa-solid fa-inbox"></i><span>Inbox</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-star"></i>Starred</a></li>
+                    <li><a href="#"><i class="fa-solid fa-clock"></i>Snoozed</a></li>
+                    <!-- snooze icon is paid version i font awesome -->
+                    <li><a href="#"><i class="fa-solid fa-paper-plane"></i>Sent</a></li>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>Drafts</a></li>
+                    <li><a href="#"><i class="fa-solid fa-shield-virus"></i>Spam</a></li>
+                    <li><a href="#"><i class="fa-solid fa-trash"></i>Trash</a></li>
+                </ul>
+            </div>
+
+            <div class="main-content" id="main-content">
+                <header>
+                    <div class="main_header_container">
+                        <div class="main_header_left">
+                            <input type="checkbox" title="Select all" />
+                            <i class="fa-solid fa-trash-can" title="Delete"></i>
+                            <i class="fa-solid fa-arrows-rotate" title="Refresh"></i>
+                        </div>
+                        <div class="main_header_right">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Search for user, email address...">
+                        </div>
+                    </div>
+                </header>
+                <div class="email-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class=""></th>
+                                <th>Sender</th>
+                                <th>Subject</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /> <i id="favourite"
+                                        class="fa-solid fa-star"></i></td>
+                                <td>Musharof Chowdhury</td>
+                                <td class="text_desc">Some note & Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">17 Oct, 2024</td>
+                                <td class="date_small_screen">17/10/24</td>
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /> <i
+                                        id="favourite2" class="fa-solid fa-star"></i></td>
+                                <td>Naimur Rahman</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">25 Nov, 2024</td>
+                                <td class="date_small_screen">25/11/24</td>
+
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /> <i
+                                        id="favourite3" class="fa-solid fa-star"></i></td>
+
+                                <td>Juhan Ahamed</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">25 Nov, 2024</td>
+                                <td class="date_small_screen">25/11/24</td>
+
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /> <i
+                                        id="favourite4" class="fa-solid fa-star"></i></td>
+
+                                <td> Mahbub Hasan</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">19 Dec, 2024</td>
+                                <td class="date_small_screen">19/12/24</td>
+
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /><i id="favourite5"
+                                        class="fa-solid fa-star"></i></td>
+                                <td>Shafiq Hammad</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">20 Dec, 2024</td>
+                                <td class="date_small_screen">20/12/24</td>
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /><i id="favourite5"
+                                        class="fa-solid fa-star"></i></td>
+                                <td>Shafiq Hammad</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">20 Dec, 2024</td>
+                                <td class="date_small_screen">20/12/24</td>
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /><i id="favourite5"
+                                        class="fa-solid fa-star"></i></td>
+                                <td>Shafiq Hammad</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">20 Dec, 2024</td>
+                                <td class="date_small_screen">20/12/24</td>
+                            </tr>
+
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /><i id="favourite5"
+                                        class="fa-solid fa-star"></i></td>
+                                <td>Shafiq Hammad</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">20 Dec, 2024</td>
+                                <td class="date_small_screen">20/12/24</td>
+                            </tr>
+                            <tr>
+                                <td class="first_td"> <input class="input_checkbox" type="checkbox" /><i id="favourite5"
+                                        class="fa-solid fa-star"></i></td>
+                                <td>Shafiq Hammad</td>
+                                <td class="text_desc">Lorem Ipsum available alteration in some form.</td>
+                                <td class="date_large_screen">20 Dec, 2024</td>
+                                <td class="date_small_screen">20/12/24</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVBAR -->
+
+
+    <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../script.js"></script>
     <script src="inbox_script.js"></script>
-    <script src="https://kit.fontawesome.com/38e95fb4e5.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

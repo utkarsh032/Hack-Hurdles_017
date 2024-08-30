@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/animation.css">
-  <link rel="stylesheet" href="./styles/responsiveness.css">
-  <link rel="stylesheet" href="./styles/special.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>FinanceFlow || A support in Finance...</title>
-
+  <title>CSS Calendar</title>
+  <link rel="stylesheet" href="calendar.css">
+  <link rel="stylesheet" href="../styles/special.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/responsiveness.css">
+  <link rel="stylesheet" href="../styles/animation.css">
 </head>
 
-<body">
+<body>
   <!-- SIDEBAR -->
   <section id="sidebar">
-    <a href="/" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+    <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
         FinanceFlow</span></a>
 
     <!-- SideMenu -->
@@ -87,16 +87,16 @@
 
       <li class="divider" data-text="SUPPORT">SUPPORT</li>
       <li>
-        <a href="./chatbox/chatbox.html">
-          <i class='fas fa-envelope icon'></i> Chat
+        <a href="#">
+          <i class='fas fa-envelope icon'></i> Messages
           <span class="right-group">
-            <!-- <span class="side-box">5</span> -->
-            <!-- <span class="side-pro side-box">PRO</span> -->
+            <span class="side-box">5</span>
+            <span class="side-pro side-box">PRO</span>
           </span>
         </a>
       </li>
       <li>
-        <a href="./inbox/inbox.html">
+        <a href="#">
           <i class='fas fa-inbox icon'></i> Inbox
           <span class="right-group">
             <span class="side-pro side-box">PRO</span>
@@ -164,7 +164,7 @@
   </section>
   <!-- SIDEBAR -->
 
-  <!-- NAVBAR -->
+
   <section id="content">
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -210,141 +210,64 @@
     </nav>
     <!-- NAVBAR -->
 
-    <!-- MAIN -->
-    <main>
-      <h1 class="title">Dashboard</h1>
-      <ul class="breadcrumbs">
-        <li><a href="#">Home</a></li>
-        <li class="divider">/</li>
-        <li><a href="#" class="active">Dashboard</a></li>
-      </ul>
-      <div class="info-data">
-        <div class="card">
-
-          <div class="data">
-            <div class="content-data card1">
-              <div class="head">
-                <h3>Finance Flow</h3>
-                <div class="menu">
-                  <i class="fa-solid fa-capsules icon"></i>
-                  <ul class="menu-link">
-                    <li><a href="#">Edit</a></li>
-                    <li><a href="#">Save</a></li>
-                    <li><a href="#">Remove</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="chart">
-                <div id="chart"></div>
-              </div>
-            </div>
-
-            <div class="content-data card2">
-              <div class="head">
-                <h3>Tracker</h3>
-                <div class="menu">
-                  <i class="fa-regular fa-floppy-disk icon"></i>
-                  <ul class="menu-link">
-                    <li><a href="#">Edit</a></li>
-                    <li><a href="#">Save</a></li>
-                    <li><a href="#">Remove</a></li>
-                  </ul>
-                </div>
-              </div>
-              <form action="#">
-                <div class="form-group">
-                  <input class="explain_expe" type="text" placeholder="Grocieries , Shopping, Investment">
-                  <input type="number" placeholder="Enter the Amount">
-                  <select name="Tracker" id="Tracker">
-                    <option value="Salary">Salary</option>
-                    <option value="Saving">Saving</option>
-                    <option value="Investment">Investment</option>
-                  </select>
-                  <input class="explain_loca" type="text" placeholder="Enter Your Locatio">
-
-                  <input type="date" id="dateInput">
-                  <button class="btn-send">Save</button>
-                </div>
-              </form>
-
-            </div>
-
-            <div class="content-data card3">
-              <div class="card_head">
-                <h3>Expenses</h3>
-                <i class="fa-solid fa-indian-rupee-sign icon"></i>
-              </div>
-              <div class="card_info">
-                <div>
-                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 42.9K</h2>
-                  <small>Total Spend</small>
-                </div>
-                <span class="expenss_rate">0.41 <i class="fa-solid fa-arrow-up"></i></span>
-              </div>
-              <div class="progress_section">
-                <div class="progress-container">
-                  <div class="progress-bar progress-bar1" style="width: 76%"></div>
-                </div>
-
-                <a href="#" class="link-icon icon"><i class="fa-solid fa-up-right-from-square"></i></a>
-              </div>
-            </div>
-
-            <div class="content-data card4">
-              <div class="card_head">
-                <h3>Saving</h3>
-                <i class="fa-regular fa-eye icon "></i>
-              </div>
-              <div class="card_info">
-                <div>
-                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 102.9K</h2>
-                  <small>Total Saving</small>
-                </div>
-                <span class="expenss_rate">9.41 <i class="fa-solid fa-arrow-up"></i></span>
-              </div>
-              <div class="progress_section">
-                <div class="progress-container">
-                  <div class="progress-bar progress-bar2" style="width: 86%"></div>
-                </div>
-
-                <a href="#" class="link-icon"><i class="fa-solid fa-up-right-from-square icon"></i></a>
-              </div>
-            </div>
-
-            <div class="content-data card5">
-              <div class="card_head">
-                <h3>Investment</h3>
-                <i class="fa-solid fa-cube icon"></i>
-              </div>
-              <div class="card_info">
-                <div>
-                  <h2><i class="fa-solid fa-indian-rupee-sign"></i> 20.01K</h2>
-                  <small>Total Investment</small>
-                </div>
-                <span class="expenss_rate">1.41 <i class="fa-solid fa-arrow-up"></i></span>
-              </div>
-              <div class="progress_section">
-                <div class="progress-container">
-                  <div class="progress-bar progress-bar3 icon" style="width: 17%"></div>
-                </div>
-
-                <a href="#" class="link-icon"><i class="fa-solid fa-up-right-from-square icon"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-
-    </main>
-    <!-- MAIN -->
+    <div class="calendar-container">
+      <!-- Weeks -->
+      <div class="days-of-week">
+        <div class="day-of-week">Sun</div>
+        <div class="day-of-week">Mon</div>
+        <div class="day-of-week">Tue</div>
+        <div class="day-of-week">Wed</div>
+        <div class="day-of-week">Thu</div>
+        <div class="day-of-week">Fri</div>
+        <div class="day-of-week">Sat</div>
+      </div>
+      <!-- Days of the Month -->
+      <div class="days">
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day">31</div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+      </div>
+    </div>
   </section>
+
   <!-- NAVBAR -->
+
 
   <script src="https://kit.fontawesome.com/85d6401dbb.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-  <script src="script.js"></script>
-
-  </body>
+  <script src="../script.js"></script>
+</body>
 
 </html>
