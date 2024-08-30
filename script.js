@@ -21,6 +21,13 @@ allDropdown.forEach((item) => {
   });
 });
 
+// Mode
+const checkbox = document.getElementById("checkbox");
+
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
 // SIDEBAR COLLAPSE
 const toggleSidebar = document.querySelector("nav .toggle-sidebar");
 const allSideDivider = document.querySelectorAll("#sidebar .divider");
