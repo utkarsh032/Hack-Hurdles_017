@@ -1,12 +1,420 @@
-.auth {
+
+.content_auth {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
-  align-items: center;
-  text-align: center;
-  background-color: red;
 }
 
-.card2 {
-  background-color: purple;
+#d1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#d2 {
+  background-color: #132031;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#d1>div {
+  /* background-color: #243040; */
+  height: 80%;
+  width: 70%;
+  border-radius: 10px;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#d2>div {
+  background-color: #243040;
+  height: 96%;
+  width: 90%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* text-align: center; */
+  line-height: 2;
+}
+
+.brand {
+  font-size: 24px;
+  /* display: flex; */
+  /* align-items: center; */
+  color: #5750F1;
+  height: 64px;
+  font-weight: 900;
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all .3s ease;
+  /* padding: 10px 20px; */
+  gap: 6px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form p {
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.line-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line-wrapper hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  flex: 1;
+}
+
+.line-wrapper .text {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 13px;
+  padding-right: 45px;
+  /* Adjusting right padding to avoid icon overlap */
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #1e2a36;
+  color: #fff;
+  height: 45px;
+  box-sizing: border-box;
+}
+
+.input-container input::placeholder {
+  color: #999;
+  font-size: 18px;
+}
+
+.input-container i {
+  position: absolute;
+  right: 15px;
+  /* Adjusted icon position */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.google-signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #1e2a36;
+  color: #d9cdcd;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.google-signin-btn:hover {
+  background-color: #357ae8;
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+}
+
+.remember-forgot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.reminder {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.reminder input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #1e2a36;
+  border: 1px solid #1e2a36;
+  cursor: pointer;
+  margin-right: 5px;
+  position: relative;
+}
+
+
+
+#signup_link {
+  color: #357ae8;
+  text-decoration: none;
+}
+
+#signup_link:hover {
+  text-decoration: underline;
+}
+
+.reminder input[type="checkbox"]:checked {
+  background-color: #5650f0;
+}
+
+.reminder input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 12px;
+}
+
+.signin-btn {
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #5650f0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Side Container Styling */
+#side_conainer>img {
+  width: 65%;
+  height: auto;
+  max-width: 100%;
+  /* margin: 20px 0; */
+  object-fit: cover;
+  padding: 2rem;
+  width: 100%;
+}
+
+#side_conainer>h1 {
+  color: white;
+  font-size: 40px;
+}
+
+#side_conainer>h2 {
+  color: #b3c5d3;
+  font-size: 20px;
+}
+
+#side_conainer>p {
+  color: #b3c5d3;
+  font-size: 18px;
+}
+
+#side_conainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Hide overflow if needed */
+}
+
+
+/* Animations */
+@keyframes logoBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#side_conainer .logo {
+  animation: textColorChange 2s infinite;
+}
+
+@media (max-width: 300px) {
+  .google-signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 50px;
+    width: 50%;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: #1e2a36;
+    color: #d9cdcd;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+#signintext {
+  color: #b3c5d3;
+}
+
+/* Responsive input placeholder and Google button font size */
+@media (max-width: 800px) {
+  .input-container input::placeholder {
+    font-size: 12px;
+    /* Adjust placeholder font size for small screens */
+  }
+
+  @media (max-width: 700px) {
+    .input-container input::placeholder {
+      font-size: 5.2px;
+      /* Adjust placeholder font size for small screens */
+    }
+
+    .google-signin-btn {
+      font-size: 14px;
+      /* Adjust Google button font size for small screens */
+    }
+  }
+
+  @media (max-width: 400px) {
+    .input-container input::placeholder {
+      font-size: 12px;
+      /* Further adjust placeholder font size for very small screens */
+    }
+
+    .google-signin-btn {
+      font-size: 12px;
+      /* Further adjust Google button font size for very small screens */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .remember-forgot {
+      flex-direction: column;
+      /* Stack the elements vertically on small screens */
+      align-items: flex-start;
+    }
+
+    .remember-forgot a,
+    .reminder label {
+      font-size: 14px;
+      /* Adjust font size for small screens */
+      word-wrap: break-word;
+      /* Ensure the text wraps to the next line if necessary */
+    }
+
+    .reminder {
+      margin-bottom: 10px;
+      /* Add space between the elements */
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    .remember-forgot a,
+    .reminder label {
+      font-size: 12px;
+      /* Further adjust font size for very small screens */
+    }
+  }
+
+  #signup_link {
+    color: #357ae8;
+    text-decoration: none;
+  }
+
+  #signup_link:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive styling for 'Don't have an account? Sign Up' */
+  @media (max-width: 600px) {
+    form p {
+      font-size: 14px;
+      /* Reduce font size for small screens */
+      text-align: center;
+      word-wrap: break-word;
+      /* Ensure the text wraps to the next line if necessary */
+    }
+
+    #signup_link {
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 14px;
+      /* Ensure link font size matches the text */
+    }
+  }
+
+  @media (max-width: 400px) {
+    form p {
+
+      font-size: 12px;
+      /* Further reduce font size for very small screens */
+    }
+
+    #signup_link {
+      font-size: 12px;
+      /* Ensure link font size matches the text */
+    }
+  }
+
+  /* Responsive font size for "Welcome Back!" */
+  @media (max-width: 800px) {
+    #side_conainer>h1 {
+      font-size: 35px;
+      /* Adjust font size for medium-small screens */
+    }
+  }
+
+  @media (max-width: 600px) {
+    #side_conainer>h1 {
+      font-size: 30px;
+      /* Adjust font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 400px) {
+    #side_conainer>h1 {
+      font-size: 25px;
+
+    }
+  }
 }
