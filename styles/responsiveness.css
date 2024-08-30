@@ -20,6 +20,21 @@
     transition: all .3s ease;
   }
 
+  #sidebar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #content {
+    width: 100%;
+    left: 0;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   nav .nav-link,
   nav .divider {
     display: none;
@@ -56,6 +71,4 @@
   #content {
     width: 100%;
   }
-
-
 }

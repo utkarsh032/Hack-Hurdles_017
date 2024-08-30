@@ -34,13 +34,10 @@ text:#F23030
   --red: #F23030;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background: #020d1a;
-  color: #fff;
+  color: var(--light);
+  font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -55,8 +52,6 @@ li {
 /* SIDEBAR */
 #sidebar {
   position: fixed;
-  /* max-width: 260px; */
-  /* width: 100%; */
   width: 20%;
   background-color: #122031;
   top: 0;
@@ -105,13 +100,11 @@ li {
   padding: 4px 10px;
   border-radius: .25rem;
   margin-left: 10px;
-  /* Increase distance between "Messages" and "5" */
 }
 
 .side-pro {
   padding: 4px 10px;
   margin-left: 0px;
-  /* Reduce distance between "5" and "PRO" */
 }
 
 li a {
@@ -275,6 +268,7 @@ li a {
 #sidebar .btn-upgrade:hover {
   background: var(--dark-blue);
 }
+
 
 #sidebar .ads .wrapper p {
   font-size: 12px;
@@ -493,7 +487,6 @@ main .data {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  color: #FFFFFF;
   border: none;
 }
 
@@ -502,7 +495,7 @@ main .data .content-data {
   flex-basis: 400px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #020d1a;
+  /* background-color: #020d1a; */
   border-radius: 6px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.4px);
@@ -519,7 +512,7 @@ main .content-data .head {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
 }
 
 main .content-data .head h3 {
@@ -559,7 +552,7 @@ main .data .content-data .progress_section {
 /* Container for the progress bar */
 main .data .content-data .progress_section .progress-container {
   width: 70%;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   border-radius: 15px;
   overflow: hidden;
   height: 20px;
@@ -571,7 +564,7 @@ main .data .content-data .progress_section .progress-bar {
   height: 100%;
   text-align: center;
   line-height: 30px;
-  color: white;
+  /* color: white; */
   border-radius: 15px;
   transition: width 0.4s ease;
 }
@@ -603,6 +596,7 @@ main .data .content-data .card_info {
 
 main .data .content-data .card_info div small {
   color: var(--grey);
+  /* background-color: red; */
 }
 
 main .data .content-data .card_info .expenss_rate {
@@ -656,7 +650,7 @@ main .content-data .head .menu-link a {
 }
 
 main .content-data .head .menu-link a:hover {
-  /* background: var(--grey); */
+  background: var(--grey);
   background-color: red;
 }
 
@@ -665,8 +659,8 @@ main .content-data .chart {
   max-width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
-  color: #FFFFFF;
-  background-color: #020d1a;
+  /* color: #FFFFFF; */
+  /* background-color: #020d1a; */
 }
 
 main .content-data .chart::-webkit-scrollbar {
@@ -683,7 +677,7 @@ main .form-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
-  background-color: #020d1a;
+  /* background-color: #020d1a; */
   margin-top: 6px;
 }
 
@@ -697,10 +691,11 @@ main .form-group input {
   padding: 10px 16px;
   border-radius: 5px;
   outline: none;
-  background: var(--grey);
+  /* background: var(--grey); */
+  background: transparent;
+  border: 1px solid #374151;
   /* background-color: #020d1a; */
-  color: #FFFFFF;
-  border: none;
+  /* color: #FFFFFF; */
   transition: all .3s ease;
   width: 100%;
 }
@@ -710,8 +705,11 @@ main .form-group input:focus {
 }
 
 #Tracker {
-  background: var(--grey);
-  color: #fff;
+  /* background: var(--grey); */
+  background: transparent;
+  /* background-color: red; */
+  /* color: #fff; */
+  color: #8D8D8D;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -720,11 +718,12 @@ main .form-group input:focus {
 input[type="date"] {
   padding: 5px;
   border-radius: 5px;
+  color: #8D8D8D;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
-  color: #fff;
+  /* color: #fff; */
 }
 
 input[type="date"]::-moz-focus-inner {
@@ -736,7 +735,7 @@ main .btn-send {
   padding: 0 16px;
   background: var(--blue);
   border-radius: 5px;
-  color: var(--light);
+  /* color: var(--light); */
   cursor: pointer;
   border: none;
   transition: all .3s ease;
@@ -746,17 +745,11 @@ main .btn-send:hover {
   background: var(--dark-blue);
 }
 
-/* MAIN */
-/* CONTENT */
-/* Our Team */
-.team {
-  /* background-color: red; */
-}
 
 /* Footer */
 footer {
   /* background-color: #000; */
-  color: #fff;
+  /* color: #fff; */
   padding: 40px 0;
   position: relative;
   overflow: hidden;
@@ -826,7 +819,8 @@ footer {
 
 .social-icons a {
   display: inline-block;
-  color: #fff;
+  /* color: #fff; */
+  color: #8D8D8D;
   font-size: 18px;
   transition: transform 0.3s;
 }
@@ -867,7 +861,6 @@ footer {
   }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -879,7 +872,6 @@ footer {
 }
 
 /* User Experiences */
-/* Best Reviews Section Styling */
 .best-reviews {
   padding: 60px 0;
   text-align: center;
@@ -932,7 +924,7 @@ footer {
 .user-info h3 {
   font-size: 18px;
   margin: 0;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
 }
 
 .user-info p {
@@ -943,10 +935,9 @@ footer {
 .user-review {
   font-size: 16px;
   line-height: 1.5;
-  color: #EEEEEE;
+  /* color: #EEEEEE; */
 }
 
-/* Infinite Scroll Animation */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
@@ -957,7 +948,6 @@ footer {
   }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .review-card {
     width: 200px;

@@ -129,7 +129,6 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #ffff;
 }
 
 
@@ -140,7 +139,6 @@
   border-radius: 50%;
   color: #FFFFFF;
 }
-
 
 #btn3 {
   background-color: #374151;
@@ -168,7 +166,7 @@
   height: 10px;
   background-color: red;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid #9CA3AF;
   margin-right: 19px;
   margin-top: 15px;
 }
@@ -183,7 +181,7 @@
 }
 
 .icon {
-  color: #fff;
+  /* color: #fff; */
   padding: 8px;
   border-radius: 50%;
   transition: background-color 0.3s ease;
