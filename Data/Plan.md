@@ -5,6 +5,8 @@ backgroun:#3FD97F
 backgroun:#ff9c55
 backgroun:#18BFFF
 
+<!-- #5750F1 -->
+
 Font Color:
 primary-color:#fff
 secondary-color:#9CA3AF
