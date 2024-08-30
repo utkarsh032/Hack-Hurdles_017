@@ -180,3 +180,11 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+// Footer
+document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector(".footer-section.about h2");
+  logo.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
