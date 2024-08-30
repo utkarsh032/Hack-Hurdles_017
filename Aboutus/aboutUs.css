@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: #14171b;
+}
+
+.sec1_hero_container {
+  position: relative;
+  background-image: url("./images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+.sec1_hero_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.7);
+  z-index: 1;
+}
+
+.sec1_hero_container div {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+.sec1_p1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sec1_p2 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hr{
+  width: 40%;
+}
+
+.sec2 {
+  display: flex;
+  justify-content: center;
+}
+
+.sec2_conatiner {
+  width: 80%;
+  margin-top: 100px;
+}
+
+.sec2_main_box1 {
+  display: flex;
+}
+
+.sec2_box_left {
+  width: 30%;
+  max-height: 400px;
+}
+
+.sec2_box_right {
+  width: 70%;
+}
+
+.sec2_box_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sec2_box_right_p1 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.sec2_box_right_p2 {
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 80%;
+  text-align: justify;
+}
+
+.sec2_main_box2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sec2_main_box3 {
+  display: flex;
+}
+
+.sec3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.sec3_container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec3_box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 30%;
+}
+
+.sec3_img_container {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  max-height: 250px;
+}
+
+.sec3_img {
+  width: 100%;
+}
+
+.sec3_p1 {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.sec3_p2 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.sec2_main_box3{
+   gap: 50px;
+}
+
+
+@media screen and (max-width:1209px) {
+    .sec1_hero_container div{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:902px) {
+    .sec3_container{
+        width: 100%;
+    }
+    
+    .sec3{
+        padding: 20px;
+    }
+
+    .sec2_box_right_p2{
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:725px) {
+    .sec2_box_left{
+        display: none;
+    }
+
+    .sec2_box_right{
+        width: 100%;
+    }
+
+    .sec2_conatiner{
+        margin-top: 0;
+    }
+
+    .sec1_hero_container{
+        height: 350px;
+    }
+
+    .sec1_p1{
+        font-size: 36px;
+    }
+    .sec1_p2{
+        font-size: 14px;
+    }
+
+    .sec2_box_right_p2{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .sec3_box{
+        width: 60%;
+    margin: auto;
+    }
+
+    .sec3_container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sec3_box{
+        width: 100%;
+    }
+}
+
