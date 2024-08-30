@@ -55,8 +55,9 @@ li {
 /* SIDEBAR */
 #sidebar {
   position: fixed;
-  max-width: 260px;
-  width: 100%;
+  /* max-width: 260px; */
+  /* width: 100%; */
+  width: 20%;
   background-color: #122031;
   top: 0;
   left: 0;
@@ -103,13 +104,16 @@ li {
   background-color: #3c50e0;
   padding: 4px 10px;
   border-radius: .25rem;
-  margin-left: 10px; /* Increase distance between "Messages" and "5" */
+  margin-left: 10px;
+  /* Increase distance between "Messages" and "5" */
 }
 
 .side-pro {
   padding: 4px 10px;
-  margin-left: 0px; /* Reduce distance between "5" and "PRO" */
+  margin-left: 0px;
+  /* Reduce distance between "5" and "PRO" */
 }
+
 li a {
   display: flex;
   justify-content: space-between;
@@ -124,11 +128,13 @@ li a {
 }
 
 .right-group .side-box {
-  margin-right: 10px; /* Adds space between "5" and "PRO" */
+  margin-right: 10px;
+  /* Adds space between "5" and "PRO" */
 }
 
 .right-group .side-pro {
-  margin-left: 0; /* Keeps "PRO" in line, unaffected by "5" */
+  margin-left: 0;
+  /* Keeps "PRO" in line, unaffected by "5" */
 }
 
 
@@ -299,14 +305,15 @@ li a {
 /* NAVBAR */
 nav {
   background-color: #122031;
+  width: 80%;
   height: 64px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   grid-gap: 28px;
-  position: sticky;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -423,12 +430,11 @@ nav .profile .profile-link a:hover {
 
 /* NAVBAR */
 
-
-
 /* MAIN */
 main {
-  width: 100%;
-  padding: 24px 20px 20px 20px;
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
+
 }
 
 main .title {
@@ -488,8 +494,8 @@ main .data {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  margin-top: 20px;
   color: #FFFFFF;
+  border: none;
 }
 
 main .data .content-data {
@@ -497,7 +503,6 @@ main .data .content-data {
   flex-basis: 400px;
   padding: 20px;
   border-radius: 10px;
-  /* background: rgba(255, 255, 255, 0.11); */
   background-color: #020d1a;
   border-radius: 6px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -603,6 +608,11 @@ main .data .content-data .card_info div small {
 
 main .data .content-data .card_info .expenss_rate {
   color: #3FD97F;
+}
+
+main .info-data .card {
+  background-color: transparent;
+  border: none;
 }
 
 main .content-data .head .menu {

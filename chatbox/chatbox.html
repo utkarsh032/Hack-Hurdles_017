@@ -1,85 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Messages UI</title>
-    <link rel="stylesheet" href="chatbox.css" />
-  </head>
-  <body>
-    <div class="top-header">
-      <h2>Messages</h2>
-      <p>Dashboard / <span>Messages</span></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="inbox.css">
+  <link rel="stylesheet" href="../styles/special.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/responsiveness.css">
+  <link rel="stylesheet" href="../styles/animation.css">
+  <link rel="stylesheet" href="chatbox.css" />
+  <title>Messages UI</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
+        FinanceFlow</span></a>
+
+    <!-- SideMenu -->
+    <ul class="side-menu">
+
+      <li class="divider" data-text="main">Main</li>
+
+      <li>
+        <a href="#"><i class='fas fa-tachometer-alt icon'></i> Dashboard <i
+            class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Analytics<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Marketing<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">CRM<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Stocks<span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+
+      <li>
+        <a href="./Calendar/calendar.html">
+          <i class='far fa-calendar-alt icon'></i> Calendar
+          <span class="right-group">
+            <span class="side-pro side-box">PRO</span>
+          </span>
+        </a>
+      </li>
+      <a href="#"><i class='far fa-calendar-alt icon'></i> Profile</i></a>
+
+      <li>
+        <a href="#"><i class='fas fa-tasks icon'></i> Task <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">List<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Kanban<span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class='fas fa-edit icon'></i> Forms <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Form </a></li>
+          <li><a href="#">Pro Form <span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Form Layout</a></li>
+          <li><a href="#">Form Layout <span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class='fas fa-table icon'></i> Tables <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Tables</a></li>
+          <li><a href="#">Pro Tables <span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class='fas fa-file icon'></i> Pages <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Data Tables <span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Pricing Tables<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Error Page<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Faq's<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Teams<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Mail Success<span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+      <li class="divider" data-text="SUPPORT">SUPPORT</li>
+      <li>
+        <a href="#">
+          <i class='fas fa-envelope icon'></i> Messages
+          <span class="right-group">
+            <span class="side-box">5</span>
+            <span class="side-pro side-box">PRO</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='fas fa-inbox icon'></i> Inbox
+          <span class="right-group">
+            <span class="side-pro side-box">PRO</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='fas fa-file-invoice icon'></i> Invoice
+          <span class="right-group">
+            <span class="side-pro side-box">PRO</span>
+          </span>
+        </a>
+      </li>
+
+
+      <li class="divider" data-text="OTHERS">OTHERS</li>
+      <li>
+        <a href="#"><i class='fas fa-chart-bar icon'></i> Chart <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic Chart</a></li>
+          <li><a href="#">Advance Chart<span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class='fas fa-cogs icon'></i> UI Elements <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Accordion<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Alerts</a></li>
+          <li><a href="#">Avatars<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Badge<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Breadcrumbs<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Buttons</a></li>
+          <li><a href="#">Buttons Group<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Cards<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Carousel<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Dropdowns<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Images<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">List<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Modals<span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Notifications<span class="side-pro side-box">PRO</span></a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class='fas fa-lock icon'></i> Authentication <i class='fas fa-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Sign In <span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Sign Up <span class="side-pro side-box">PRO</span></a></li>
+          <li><a href="#">Reset Password</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">2-Step Verification</a></li>
+          <li><a href="#">Under Maintenance</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="ads">
+      <div class="wrapper">
+        <a href="#" class="btn-upgrade">Upgrade</a>
+        <p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+      </div>
     </div>
-    <div class="main-container">
-      <div class="sidebar">
-        <div class="active-conversations">
-          <span>Active Conversations</span>
-          <div class="active-count">7</div>
+  </section>
+  <!-- SIDEBAR -->
+
+
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+      <div id="dashboard">
+        <i class="fa-solid fa-bars toggle-sidebar"></i>
+      </div>
+      <div class="right_nav">
+        <div id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="search">
         </div>
-        <div class="search-box">
-          <input type="text" placeholder="Search..." />
+
+        <!-- dark/light_mode -->
+        <div id="dark/light_mode">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
         </div>
-        <div class="conversation">
-          <div class="avatar">
-            <img src="./images/avatar_147142.png" alt="David Hello" />
-          </div>
-          <div class="conversation-info">
-            <div class="conversation-name">David Hello</div>
-            <div class="conversation-last-message">Hello, how are you?</div>
-          </div>
-          <div class="unread-badge">3</div>
+        <!-- notification -->
+        <a href="#" class="nav-link notification">
+          <i class="fa-regular fa-bell icon"></i>
+
+          <span class="badge"></span>
+        </a>
+
+        <div class="profile">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <ul class="profile-link">
+            <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+            <hr>
+            <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+            <hr>
+            <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+          </ul>
         </div>
-        <div class="conversation">
-          <div class="avatar">
-            <img src="./images/avatar_147142.png" alt="Henry Fisher" />
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- Inbox -->
+    <div class="chatbox">
+      <div class="top-header">
+        <h2>Messages</h2>
+        <p>Dashboard / <span>Messages</span></p>
+      </div>
+      <div class="main-container">
+        <div class="sidebar_chatbox">
+          <div class="active-conversations">
+            <span>Active Conversations</span>
+            <div class="active-count">9</div>
           </div>
-          <div class="conversation-info">
-            <div class="conversation-name">Henry Fisher</div>
-            <div class="conversation-last-message">I am waiting for you</div>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
           </div>
-        </div>
-        <div class="conversation">
-          <div class="avatar">
-            <img src="./images/avatar_147142.png" alt="David Hello" />
-          </div>
-          <div class="conversation-info">
-            <div class="conversation-name">Robinson</div>
-            <div class="conversation-last-message">Can we do it tomorrow</div>
-          </div>
-          <div class="unread-badge">3</div>
-        </div>
-        <div class="conversation">
-          <div class="avatar">
-            <img src="./images/avatar_147142.png" alt="David Hello" />
-          </div>
-          <div class="conversation-info">
-            <div class="conversation-name">Maria</div>
-            <div class="conversation-last-message">How can i help you</div>
-          </div>
-          <div class="unread-badge">3</div>
-        </div>
-        <div class="conversation">
-          <div class="avatar">
-            <img src="./images/avatar_147142.png" alt="David Hello" />
-          </div>
-          <div class="conversation-info">
-            <div class="conversation-name">John</div>
-            <div class="conversation-last-message">Where do you live?</div>
-          </div>
-          <div class="unread-badge">7</div>
-        </div>
-        <div class="conversation">
-          <div class="avatar">
-            <img src="./images/avatar_147142.png" alt="David Hello" />
-          </div>
-          <div class="conversation-info">
-            <div class="conversation-name">Leoj</div>
-            <div class="conversation-last-message">Come over</div>
-          </div>
-          <div class="unread-badge">1</div>
-        </div>
-        <div class="conversation">
+          <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="David Hello" />
             </div>
@@ -89,7 +236,38 @@
             </div>
             <div class="unread-badge">3</div>
           </div>
-          
+
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="David Hello" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">Robinson</div>
+              <div class="conversation-last-message">Can we do it tomorrow</div>
+            </div>
+            <div class="unread-badge">3</div>
+          </div>
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="David Hello" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">Maria</div>
+              <div class="conversation-last-message">How can i help you</div>
+            </div>
+            <div class="unread-badge">3</div>
+          </div>
+          <div class="conversation">
+            <div class="avatar">
+              <img src="./images/avatar_147142.png" alt="David Hello" />
+            </div>
+            <div class="conversation-info">
+              <div class="conversation-name">David Hello</div>
+              <div class="conversation-last-message">Hello, how are you?</div>
+            </div>
+            <div class="unread-badge">3</div>
+          </div>
+
           <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="Sarah Lee" />
@@ -100,7 +278,7 @@
             </div>
             <!-- No unread badge -->
           </div>
-          
+
           <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="John Doe" />
@@ -111,7 +289,7 @@
             </div>
             <div class="unread-badge">5</div>
           </div>
-          
+
           <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="Emily Smith" />
@@ -122,7 +300,7 @@
             </div>
             <!-- No unread badge -->
           </div>
-          
+
           <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="Michael Brown" />
@@ -133,7 +311,7 @@
             </div>
             <div class="unread-badge">1</div>
           </div>
-          
+
           <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="Sophia Green" />
@@ -144,7 +322,7 @@
             </div>
             <!-- No unread badge -->
           </div>
-          
+
           <div class="conversation">
             <div class="avatar">
               <img src="./images/avatar_147142.png" alt="James White" />
@@ -155,136 +333,125 @@
             </div>
             <div class="unread-badge">2</div>
           </div>
-          
-        
-        <!-- Add more conversations here -->
-      </div>
-      <div class="main-content">
-        <div class="chat-header">
-          <div class="chat_header_main">
-            <div class="main_profile_container">
-              <img
-                class="profile_image"
-                src="./images/avatar_147142.png"
-                alt="profile"
-              />
-            </div>
-            <div>
-              <p class="profile_name">Henry Dholi</p>
-              <p class="last_seen">Last active 5min ago</p>
-            </div>
-          </div>
-          <div class="main_profile_header_right">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-            <i id="close" class="fa-solid fa-xmark"></i>
-          </div>
+
+
+          <!-- Add more conversations here -->
         </div>
-        <div class="chat-area">
+        <div class="main-content">
+          <div class="chat-header">
+            <div class="chat_header_main">
+              <div class="main_profile_container">
+                <img class="profile_image" src="./images/avatar_147142.png" alt="profile" />
+              </div>
+              <div>
+                <p class="profile_name">Henry Dholi</p>
+                <p class="last_seen">Last active 5min ago</p>
+              </div>
+            </div>
+            <div class="main_profile_header_right">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-video"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <i id="close" class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="chat-area">
             <div class="message received">
               <p>Andre Thomas</p>
               <div class="message-bubble">
-                I want to make an appointment tomorrow from 2:00 to 5:00pm?
+                Hey, do you have any tips on how to save more money?
               </div>
               <div class="message-time">1:55pm</div>
             </div>
-          
+
             <div class="message sent">
               <div class="message-bubble">
-                Hello, Thomas! I will check the schedule and inform you.
-              </div>
+                Definitely! Start by tracking your expenses. It helps to see where your money is going and identify
+                areas
+                where you can cut back.</div>
               <div class="message-time">1:58pm</div>
             </div>
-          
+
             <div class="message received">
               <p>Andre Thomas</p>
               <div class="message-bubble">
-                Also, I wanted to discuss the financial report from last quarter. We need to look into the expenses for marketing.
+                That’s a good idea. Do you use any apps for budgeting?
               </div>
               <div class="message-time">2:03pm</div>
             </div>
-          
+
             <div class="message sent">
               <div class="message-bubble">
-                Yes, I noticed the marketing expenses were higher than expected. We should go through the details and see where we can optimize.
-              </div>
+                Yeah, I use an app called Mint. It’s great for budgeting and monitoring spending habits. You should try
+                it
+                out!</div>
               <div class="message-time">2:06pm</div>
             </div>
-          
+
             <div class="message received">
               <p>Andre Thomas</p>
               <div class="message-bubble">
-                Agreed. I think we can reduce costs by focusing more on digital marketing. It’s more cost-effective than traditional methods.
+                I’ll check it out. Thanks for the tip!
               </div>
               <div class="message-time">2:10pm</div>
             </div>
-          
+
             <div class="message sent">
               <div class="message-bubble">
-                That’s a good idea. I’ll prepare a comparison between the costs of digital vs. traditional marketing for our next meeting.
+                No problem! Let me know if you need more advice.
               </div>
               <div class="message-time">2:12pm</div>
             </div>
-          
-            <div class="message received">
-              <p>Andre Thomas</p>
-              <div class="message-bubble">
-                Perfect! Let’s aim to finalize the budget adjustments by the end of the week.
-              </div>
-              <div class="message-time">2:15pm</div>
-            </div>
-          
-            <div class="message sent">
-              <div class="message-bubble">
-                Sounds good. I’ll keep you updated.
-              </div>
-              <div class="message-time">2:17pm</div>
-            </div>
-          </div>
-          
-        <div class="input-area">
-          <div class="input-box">
-            <input type="text" placeholder="Type something here..." />
-            <div>
-              <!-- Hidden File Input -->
-              <input type="file" id="file_input" style="display: none" />
 
-              <!-- Attach Button -->
-              <button class="file_icon" id="attach_button">
-                <i class="fa-solid fa-paperclip"></i>
-              </button>
 
-              <!-- Emoji Button -->
-              <button class="emoji_icon">
-                <i class="fa-solid fa-face-smile"></i>
-              </button>
-            </div>
           </div>
-          <button class="send_button">
-            <i class="fa-solid fa-paper-plane"></i>
-          </button>
+
+          <div class="input-area">
+            <div class="input-box">
+              <input type="text" placeholder="Type something here..." />
+              <div>
+                <!-- Hidden File Input -->
+                <input type="file" id="file_input" style="display: none" />
+
+                <!-- Attach Button -->
+                <button class="file_icon" id="attach_button">
+                  <i class="fa-solid fa-paperclip"></i>
+                </button>
+
+                <!-- Emoji Button -->
+                <button class="emoji_icon">
+                  <i class="fa-solid fa-face-smile"></i>
+                </button>
+              </div>
+            </div>
+            <button class="send_button">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class="main_content_default">
-        <div class="main_content_default_img_container">
-          <img
-            class="default_img"
-            src="https://cdni.iconscout.com/illustration/premium/thumb/expense-management-illustration-download-in-svg-png-gif-file-formats--business-finance-strategy-concept-pack-illustrations-3561009.png"
-            alt="default_img"
-          />
-          <p class="default_message_page_text1">
-            Stay connected with your finance buddies!
-          </p>
-          <p class="default_message_page_text2">
-            secure and encrypted <i class="fa-solid fa-lock"></i>
-          </p>
+        <div class="main_content_default">
+          <div class="main_content_default_img_container">
+            <img class="default_img"
+              src="https://cdni.iconscout.com/illustration/premium/thumb/expense-management-illustration-download-in-svg-png-gif-file-formats--business-finance-strategy-concept-pack-illustrations-3561009.png"
+              alt="default_img" />
+            <p class="default_message_page_text1">
+              Stay connected with your finance buddies!
+            </p>
+            <p class="default_message_page_text2">
+              secure and encrypted <i class="fa-solid fa-lock"></i>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <script src="chatbot.js"></script>
-    <script
-      src="https://kit.fontawesome.com/38e95fb4e5.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </section>
+
+  <!-- NAVBAR -->
+
+  <script src="chatbot.js"></script>
+  <script src="../script.js"></script>
+  <script src="https://kit.fontawesome.com/38e95fb4e5.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
