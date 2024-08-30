@@ -1,0 +1,175 @@
+#parent-div {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #000e1b;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.child-container1 {
+  background-color: blueviolet;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5c3679d1f407b42e446f951e/1548777597581-WF05ZYZN3MHXKMY2M4YZ/banner-finance.jpg");
+  height: 35%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: backgroundAnimation 10s linear infinite;
+}
+
+.circle {
+  width: 40vw;
+  max-width: 120px;
+  height: 40vw;
+  max-height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgray;
+  z-index: 1;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(45deg, cyan, magenta, lime, pink, purple, cyan),
+    linear-gradient(45deg, cyan, magenta, lime, pink, purple, cyan);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: neonCircular 5s linear infinite;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.child-container2 {
+  color: #f0f0f0;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-bofontx;
+  flex-grow: 1;
+  padding-top: 50px;
+}
+
+#b1 {
+  font-weight: bold;
+  height: 5vh;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+
+#b1+p {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Icons list */
+ul.icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul.icons-list li {
+  margin: 0 15px;
+}
+
+ul.icons-list i {
+  font-size: 2rem;
+  animation: iconAnimation 2s infinite;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 908px) {
+  .circle {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  #b1 {
+    margin-top: 20px;
+  }
+
+  #b1+p {
+    font-size: 1.5rem;
+  }
+
+  ul.icons-list i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #b1 {
+    margin-top: 20px;
+  }
+
+  #b1+p {
+    font-size: 1.2rem;
+  }
+
+  ul.icons-list i {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animations */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
+}
