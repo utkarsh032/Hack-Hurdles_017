@@ -749,3 +749,217 @@ main .btn-send:hover {
 /* MAIN */
 /* CONTENT */
 /* Our Team */
+.team {
+  /* background-color: red; */
+}
+
+/* Footer */
+footer {
+  /* background-color: #000; */
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #374151;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-section h2::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #3c50e0;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #3c50e0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Neon Border Effect */
+.footer-section::before,
+.footer-section::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #3c50e0;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  box-sizing: border-box;
+  animation: neon-border 3s infinite alternate;
+}
+
+.footer-section::before {
+  top: -2px;
+  left: -2px;
+}
+
+.footer-section::after {
+  bottom: -2px;
+  right: -2px;
+}
+
+@keyframes neon-border {
+  0% {
+    box-shadow: 0 0 5px #3c50e0, 0 0 10px #3c50e0, 0 0 15px #3c50e0, 0 0 20px #3c50e0, 0 0 25px #3c50e0;
+  }
+
+  100% {
+    box-shadow: 0 0 20px #3c50e0, 0 0 30px #3c50e0, 0 0 40px #3c50e0, 0 0 50px #3c50e0, 0 0 60px #3c50e0;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+}
+
+/* User Experiences */
+/* Best Reviews Section Styling */
+.best-reviews {
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.best-reviews h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.reviews-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.reviews-container {
+  display: flex;
+  width: calc(100% * 2);
+  animation: scroll-left 20s linear infinite;
+}
+
+.review-card {
+  border-radius: 10px;
+  border: 1px solid #374151;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 0 10px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #3c50e0;
+}
+
+.user-info h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #777;
+}
+
+.user-review {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #EEEEEE;
+}
+
+/* Infinite Scroll Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .review-card {
+    width: 200px;
+  }
+}
