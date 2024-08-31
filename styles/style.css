@@ -300,6 +300,7 @@ li a {
 nav {
   background-color: #122031;
   width: 80%;
+  border-bottom-left-radius: 24px;
   height: 64px;
   padding: 0 20px;
   display: flex;
