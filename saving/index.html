@@ -18,7 +18,7 @@
 <!-- SIDEBAR -->
 <section id="sidebar">
     <a href="#" class="brand "><i class="fa-solid fa-circle-notch brand_logo"></i><span class="logo">
-            FinanceFlow</span></a>
+            FinanceFlow</span></a> 
 
     <!-- SideMenu -->
     <ul class="side-menu">
@@ -148,7 +148,7 @@
             <a href="#"><i class='fas fa-lock icon'></i> Authentication <i
                     class='fas fa-chevron-right icon-right'></i></a>
             <ul class="side-dropdown">
-                <li><a href="#">Sign In <span class="side-pro side-box">PRO</span></a></li>
+                <li><a href="#">Sign In <span class="side-pro side-box">PRO</span></a></li> -->
                 <li><a href="#">Sign Up <span class="side-pro side-box">PRO</span></a></li>
                 <li><a href="#">Reset Password</a></li>
                 <li><a href="#">Coming Soon</a></li>
@@ -165,12 +165,12 @@
         </div>
     </div>
 </section>
-<!-- SIDEBAR -->
+ <!-- SIDEBAR --> 
 
 
 <section id="content">
     <!-- NAVBAR -->
-    <nav class="navbar">
+     <nav class="navbar">
 
         <div id="dashboard">
             <i class="fa-solid fa-bars toggle-sidebar"></i>
@@ -179,10 +179,10 @@
             <div id="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" placeholder="search">
-            </div>
+            </div> 
 
-            <!-- dark/light_mode -->
-            <div id="dark/light_mode">
+            <!-- <dark/light_mode --> 
+             <div id="dark/light_mode">
                 <input type="checkbox" class="checkbox" id="checkbox">
                 <label for="checkbox" class="checkbox-label">
                     <i class="fas fa-moon"></i>
@@ -214,11 +214,11 @@
 
     <!-- Auth -->
     <main>
-        <h1 class="title">Investment</h1>
+        <h1 class="title">Saving</h1>
         <ul class="breadcrumbs">
             <li><a href="#">Home</a></li>
             <li class="divider">/</li>
-            <li><a href="#" class="active">Investment</a></li>
+            <li><a href="#" class="active">Saving</a></li>
         </ul>
 
         <!-- Profile Section -->
@@ -230,23 +230,25 @@
                 </div>
                 <div class="expenses">
                     <div class="top-section">
-                        <p>Last 24 Hours</p>
+                        <p>Last 1 month</p>
                         <div class="dropdown">
                             <button class="dropbtn">This month
                               <i class="fa fa-caret-down"></i>
                             </button>
+                            
                           </div> 
                     </div>
                     <div class="progress-circle-container">
                         <div class="progress-circle">
                             <canvas id="progressCircle"></canvas>
-                            <span>62%</span>
+                            <span>50%</span>
                         </div>
                     </div>
                     <div class="bottom-section">
                         <div class="bottom left">
-                            <h3 style="color: rgb(13, 171, 13);">Total Profit <br>&#x20b9;100.01k</h3>
-                            <p style="margin-top: 10px;">&#x20b9;100.01k</p>
+                            <h3 style="color: rgb(13, 171, 13);">Total Saving<br>&#x20b9;390k</h3>
+                            <p style="margin-top: 10px;">&#x20b9;290k</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -255,127 +257,123 @@
 
             <div class="orders-section">
                 <div class="bottom">
-                    <h3>Invest <i class="fa-solid fa-indian-rupee-sign"></i></h3>
+                    <h3>Savings <i class="fa-solid fa-hand-holding-dollar"></i></h3>
                     <a class="print">&#128438 Print</a>
                 </div>
 
                 <table>
                     <thead style="background-color: #878484;">
                         <tr>
-                            <th>Plateform</th>
+                            <th>Goal Name</th>
                             <th>Target Amount</th>
-                            <th>Progress Percentange</th>
-                            <th>Risk Level</th>
-                            <th>Return Date</th>
+                            <th>Amount Saved So Far</th>
+                            <th>Remaining Amount</th>
+                            <th>Progress Percentage</th>
                             <th>Monthly Contribution</th>
-                            <th>P&L</th>
+                            <th>Date</th>
+                            <th>Priority Level</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Real Estate Fund</td>
-                            <td>&#x20b9;20,000</td>
-                            <td>40%</td>
-                            <td class="high">high</td>
-                            <td>12/31/2025</td>
-                            <td>&#x20b9;600</td>
-                            <td class="status profit">+5000 <i class="fa-solid fa-arrow-up"></i></td>
-                           
-                        </tr>
-                        <tr>
-                            <td>Mutual Fund</td>
-                            <td>&#x20b9;15,000</td>
-                            <td>50%</td>
-                            <td class="medium">medium</td>
-                            <td>06/30/2026</td>
-                            <td>&#x20b9;1,000</td>
-                            <td class="status loss">-100 <i class="fa-solid fa-arrow-down"></i></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Education Fund</td>
+                            <td>Emergency Fund</td>
                             <td>&#x20b9;5,000</td>
-                            <td>50%</td>
-                            <td class="high">high</td>
-                            <td>12/30/2025</td>
-                            <td>&#x20b9;5,00</td>
-                            <td class="status loss">-1000 <i class="fa-solid fa-arrow-down"></i></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Index Fund</td>
-                            <td>&#x20b9;12,000</td>
-                            <td>40%</td>
-                            <td class="low">low</td>
-                            <td>12/31/2028</td>
-                            <td>&#x20b9;800</td>
-                            <td class="status profit">+10000 <i class="fa-solid fa-arrow-up"></i></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Startup Investment</td>
-                            <td>&#x20b9;25,000</td>
-                            <td>50%</td>
-                            <td class="high">high</td>
-                            <td>12/31/2029</td>
-                            <td>&#x20b9;400</td>
-                            <td class="status profit">+2000 <i class="fa-solid fa-arrow-up"></i></td>
-                            
-                            
-                        </tr>
-                        <tr>
-                            <td>Bond Investment</td>
-                            <td>&#x20b9;7,000</td>
-                            <td>62.5%</td>
-                            <td class="low">low</td>
-                            <td>12/23/2035</td>
-                            <td>&#x20b9;1,500</td>
-                            <td class="status loss">-100 <i class="fa-solid fa-arrow-down"></i></td>
-                            
-                            
-                        </tr>
-                        <tr>
-                            <td>Stock Portfolio</td>
-                            <td>&#x20b9;10,000</td>
-                            <td>40%</td>
-                            <td class="high">high</td>
-                            <td>12/31/2027</td>
-                            <td>&#x20b9;800</td>
-                            <td class="status profit">+10000 <i class="fa-solid fa-arrow-up"></i></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Gold Investment</td>
-                            <td>&#x20b9;8,000</td>
-                            <td>59%</td>
-                            <td class="medium">medium</td>
-                            <td>12/29/2028</td>
                             <td>&#x20b9;2,000</td>
-                            <td class="status profit">+2000 <i class="fa-solid fa-arrow-up"></i></td>
-                            
-                            
-                        </tr>
-                        <tr>
-                            <td>Retirement Fund</td>
-                            <td>&#x20b9;50,000</td>
+                            <td>&#x20b9;3,000</td>
                             <td>40%</td>
-                            <td class="high">high</td>
-                            <td>06/30/2026</td>
-                            <td>&#x20b9;300</td>
-                            <td class="status loss">-100 <i class="fa-solid fa-arrow-down"></i></td>
-                            
-                           
+                            <td>&#x20b9;500</td>
+                            <td>01/12/2024</td>
+                            <td class="high">High</td>
                         </tr>
                         <tr>
-                            <td>Cryptocurrency</td>
-                            <td>&#x20b9;30,000</td>
+                            <td>Vacation</td>
+                            <td>&#x20b9;2,500</td>
+                            <td>&#x20b9;1,500</td>
+                            <td>&#x20b9;1,000</td> 
+                            <td>60%</td>
+                            <td>&#x20b9;250</td>
+                            <td>06/30/2024</td>
+                            <td class="medium">Medium</td>
+                        </tr>
+                        <tr>
+                            <td>New Laptop</td>
+                            <td>&#x20b9;1,200</td>
+                            <td>&#x20b9;400</td>
+                            <td>&#x20b9;800</td>
+                            <td>33%</td>
+                            <td>&#x20b9;100</td>
+                            <td>04/30/2025</td>
+                            <td class="low">Low</td>
+                        </tr>
+                        <tr>
+                            <td>Home Renovation</td>
+                            <td>&#x20b9;10,000</td>
+                            <td>&#x20b9;3,000</td>
+                            <td>&#x20b9;7,000</td>
+                            <td>30%</td>
+                            <td>&#x20b9;600</td>
+                            <td>08/31/2025</td>
+                            <td class="high">High</td>
+                        </tr>
+                        <tr>
+                            <td>Car Down Payment</td>
+                            <td>&#x20b9;8,000</td>
+                            <td>&#x20b9;5,000</td>
+                            <td>&#x20b9;3,000</td>
+                            <td>62.5%</td>
+                            <td>&#x20b9;400</td>
+                            <td>03/31/2024</td>
+                            <td class="high">High</td>
+                        </tr>
+                        <tr>
+                            <td>Wedding Fund</td>
+                            <td>&#x20b9;15,000</td>
+                            <td>&#x20b9;7,500</td>
+                            <td>&#x20b9;7,500</td>
                             <td>50%</td>
-                            <td class="medium">medium</td>
-                            <td>11/20/2024</td>
-                            <td>&#x20b9;500</td>
-                            <td class="status profit">+5000 <i class="fa-solid fa-arrow-up"></i></td>
-                            
-                            
+                            <td>&#x20b9;1,000</td>
+                            <td>09/30/2025</td>
+                            <td class="high">High</td>
+                        </tr>
+                        <tr>
+                            <td>College Tuition</td>
+                            <td>&#x20b9;20,000</td>
+                            <td>10,000</td>
+                            <td>&#x20b9;10,000</td>
+                            <td>50%</td>
+                            <td>&#x20b9;1,200</td>
+                            <td>07/31/2025</td>
+                            <td class="medium">Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Furniture Updrade</td>
+                            <td>&#x20b9;3,000</td>
+                            <td>&#x20b9;1,200</td>
+                            <td>&#x20b9;1,800</td>
+                            <td>40%</td>
+                            <td>&#x20b9;300</td>
+                            <td>13/31/2024</td>
+                            <td class="medium">Medium</td>
+                        </tr>
+                        <tr>
+                            <td>New Phone</td>
+                            <td>&#x20b9;1,000</td>
+                            <td>&#x20b9;700</td>
+                            <td>&#x20b9;300</td>
+                            <td>70%</td>
+                            <td>&#x20b9;150</td>
+                            <td>02/28/2024</td>
+                            <td class="low">Low</td>
+                        </tr>
+                        <tr>
+                            <td>New TV</td>
+                            <td>&#x20b9;7,000</td>
+                            <td>&#x20b9;100</td>
+                            <td>&#x20b9;400</td>
+                            <td>10%</td>
+                            <td>&#x20b9;150</td>
+                            <td>02/2/2024</td>
+                            <td class="low">High</td>
                         </tr>
                     </tbody>
                 </table>

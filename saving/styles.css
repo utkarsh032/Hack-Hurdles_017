@@ -73,22 +73,10 @@ body {
 .print {
     cursor: pointer;
     margin-right: 30px;
+    
     color: rgb(169, 168, 168);
     text-decoration: none;
 
-}
-.high{
-    color: Red;
-    font-weight: bolder;
-}
-.medium{
-    color: orange;
-    font-weight: bolder;
-}
-.low{
-    color: green;
-    font-weight: bolder;
-    
 }
 
 .progress-circle {
@@ -138,7 +126,18 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-
+.high{
+    color: red;
+    font-weight: bolder;
+}
+.medium{
+    color: orange;
+    font-weight: bolder;
+}
+.low{
+    color: green;
+    font-weight: bolder;
+}
 .status {
     font-weight: bold;
     text-transform: capitalize;
@@ -160,3 +159,22 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.dropbtn{
+background-color: #c9c7c7;
+border: none;
+font-size: 14px;
+
+padding-right: 4px;
+padding-left: 4px;
+
+border-radius: 3px;
+
+}
+  
+
+  
+
+  
+  
+  
+  
