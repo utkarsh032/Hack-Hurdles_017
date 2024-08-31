@@ -652,7 +652,6 @@ main .content-data .head .menu-link a {
 
 main .content-data .head .menu-link a:hover {
   background: var(--grey);
-  background-color: red;
 }
 
 main .content-data .chart {
