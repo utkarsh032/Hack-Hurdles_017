@@ -286,8 +286,8 @@ li a {
 /* CONTENT */
 #content {
   position: relative;
-  width: calc(100% - 260px);
-  left: 260px;
+  width: calc(100% - 20%);
+  left: 20%;
   transition: all .3s ease;
 }
 
