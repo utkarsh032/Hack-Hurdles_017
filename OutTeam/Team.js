@@ -3,12 +3,12 @@ document.querySelectorAll(".t-card").forEach((card) => {
 
   card.addEventListener("mouseenter", () => {
     video.play();
-    card.classList.add("rotate"); // Add rotation class on hover
+    card.classList.add("rotate");
   });
 
   card.addEventListener("mouseleave", () => {
     video.pause();
-    video.currentTime = 0; // Reset video to start
-    card.classList.remove("rotate"); // Remove rotation class when not hovered
+    video.currentTime = 0;
+    card.classList.remove("rotate");
   });
 });
