@@ -68,9 +68,10 @@
   pointer-events: none;
 }
 
-.t-card:hover .cover-img {
+/* .t-card:hover .cover-img {
   opacity: 0;
-}
+  z-index: 10;
+} */
 
 .t-card:hover .bg-video {
   opacity: 1;
