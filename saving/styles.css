@@ -157,7 +157,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .dropbtn{
 background-color: #c9c7c7;

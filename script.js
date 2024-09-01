@@ -5,7 +5,10 @@ const sidebar = document.getElementById("sidebar");
 allDropdown.forEach((item) => {
   const a = item.parentElement.querySelector("a:first-child");
   a.addEventListener("click", function (e) {
-    e.preventDefault();
+    // Only prevent default if the href is '#'
+    if (this.getAttribute('href') === '#') {
+      e.preventDefault();
+    }
 
     if (!this.classList.contains("active")) {
       allDropdown.forEach((i) => {
@@ -115,11 +118,9 @@ allMenu.forEach((item) => {
 });
 
 window.addEventListener("click", function (e) {
-  if (e.target !== imgProfile) {
-    if (e.target !== dropdownProfile) {
-      if (dropdownProfile.classList.contains("show")) {
-        dropdownProfile.classList.remove("show");
-      }
+  if (e.target !== imgProfile && e.target !== dropdownProfile) {
+    if (dropdownProfile.classList.contains("show")) {
+      dropdownProfile.classList.remove("show");
     }
   }
 
@@ -127,11 +128,9 @@ window.addEventListener("click", function (e) {
     const icon = item.querySelector(".icon");
     const menuLink = item.querySelector(".menu-link");
 
-    if (e.target !== icon) {
-      if (e.target !== menuLink) {
-        if (menuLink.classList.contains("show")) {
-          menuLink.classList.remove("show");
-        }
+    if (e.target !== icon && e.target !== menuLink) {
+      if (menuLink.classList.contains("show")) {
+        menuLink.classList.remove("show");
       }
     }
   });
