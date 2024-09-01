@@ -168,6 +168,7 @@ li a {
 
 #sidebar .brand .logo {
   font-weight: 800;
+  color: #FFFFFF;
 }
 
 #sidebar .icon {
@@ -377,24 +378,24 @@ nav .nav-link {
   position: relative;
 }
 
-nav .nav-link .icon {
+nav .nav-link .icon,
+.toggle-sidebar {
   font-size: 18px;
-  color: var(--dark);
+  color: #ffffff;
+  /* color: var(--dark); */
 }
 
 nav .nav-link .badge {
   position: absolute;
   top: -12px;
   right: -12px;
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 2px solid var(--light);
   background: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light);
   font-size: 10px;
   font-weight: 700;
 }
