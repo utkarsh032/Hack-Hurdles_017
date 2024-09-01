@@ -77,6 +77,8 @@ body {
     text-decoration: none;
 
 }
+
+
 .high{
     color: Red;
     font-weight: bolder;
@@ -158,5 +160,5 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
