@@ -22,7 +22,7 @@ text:#22AD5C
 text:#F23030
 */
 :root {
-  --grey:#374151;
+  --grey: #374151;
   --dark-grey: #8D8D8D;
   --light: #fff;
   --dark: ##ffff;
@@ -127,29 +127,36 @@ li a {
 
 .right-group .side-pro {
   margin-left: 0;
-  
+
 }
 
 .saving {
   text-decoration: none;
-  color: #333; /* Default text color */
+  color: #333;
+  /* Default text color */
   font-size: 16px;
-  padding: 10px; /* Padding around the text */
-  border-radius: 4px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  padding: 10px;
+  /* Padding around the text */
+  border-radius: 4px;
+  /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition */
   display: inline-flex;
-  align-items: center; /* Center icon and text vertically */
- 
+  align-items: center;
+  /* Center icon and text vertically */
+
 }
 
 .saving:hover {
-  background-color: #374151; /* Background color on hover */
+  background-color: #374151;
+  /* Background color on hover */
   cursor: pointer;
-  
+
 }
 
 .saving .icon {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px;
+  /* Space between icon and text */
 }
 
 
