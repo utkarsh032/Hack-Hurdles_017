@@ -1,4 +1,4 @@
-# FinanceFlow : https://github.com/utkarsh032/Hack-Hurdles_017
+# FinanceFlow Demo : https://utkarsh032.github.io/Hack-Hurdles_017/
 
 FinanceFlow is a web application designed to help users efficiently track and manage their financial data. Built using HTML, CSS, and JavaScript, FinanceFlow provides a user-friendly interface with features like dashboards, expense trackers, and data visualizations to keep your finances organized.
 
