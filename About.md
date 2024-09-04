@@ -41,18 +41,6 @@ FinanceFlow includes a variety of features to enhance the user experience:
 
 - **Footer**:
   - Contains links to important pages and additional information
-- \*\*UI:
-- ![Logo](<./Data/final/demo%20(1).gif>)
-- ![Logo](<./Data/final/demo%20(1).jpeg>)
-- ![Logo](<./Data/final/demo%20(2).jpeg>)
-- ![Logo](<./Data/final/demo%20(3).jpeg>)
-- ![Logo](<./Data/final/demo%20(4).jpeg>)
-- ![Logo](<./Data/final/demo%20(5).jpeg>)
-- ![Logo](<./Data/final/demo%20(6).jpeg>)
-- ![Logo](<./Data/final/demo%20(7).jpeg>)
-- ![Logo](<./Data/final/demo%20(8).jpeg>)
-- ![Logo](<./Data/final/demo%20(9).jpeg>)
-- ![Logo](<./Data/final/demo%20(10).jpeg>)
 
 ## Installation
 
